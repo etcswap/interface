@@ -15,6 +15,8 @@ export const FEE_AMOUNT_DETAIL: Record<
       ChainId.BNB,
       ChainId.CELO,
       ChainId.CELO_ALFAJORES,
+      ChainId.CLASSIC,
+      ChainId.CLASSIC_MORDOR,
       ChainId.MAINNET,
       ChainId.OPTIMISM,
       ChainId.POLYGON,

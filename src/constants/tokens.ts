@@ -398,6 +398,28 @@ class BscNativeCurrency extends NativeCurrency {
   }
 }
 
+export function isClassic(chainId: number): chainId is ChainId.CLASSIC | ChainId.CLASSIC_MORDOR {
+  return chainId === ChainId.CLASSIC || chainId === ChainId.CLASSIC_MORDOR
+}
+
+class EtcNativeCurrency extends NativeCurrency {
+  equals(other: Currency): boolean {
+    return other.isNative && other.chainId === this.chainId
+  }
+
+  get wrapped(): Token {
+    if (!isClassic(this.chainId)) throw new Error('Not etc')
+    const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
+    invariant(wrapped instanceof Token)
+    return wrapped
+  }
+
+  public constructor(chainId: number) {
+    if (!isClassic(chainId)) throw new Error('Not etc')
+    super(chainId, 18, 'ETC', 'ETC')
+  }
+}
+
 export function isAvalanche(chainId: number): chainId is ChainId.AVALANCHE {
   return chainId === ChainId.AVALANCHE
 }
@@ -442,6 +464,8 @@ export function nativeOnChain(chainId: number): NativeCurrency | Token {
     nativeCurrency = new PolygonNativeCurrency(chainId)
   } else if (isCelo(chainId)) {
     nativeCurrency = getCeloNativeCurrency(chainId)
+  } else if (isClassic(chainId)) {
+    nativeCurrency = new EtcNativeCurrency(chainId) 
   } else if (isBsc(chainId)) {
     nativeCurrency = new BscNativeCurrency(chainId)
   } else if (isAvalanche(chainId)) {

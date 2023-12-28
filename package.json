@@ -1,7 +1,7 @@
 {
   "name": "@uniswap/interface",
   "version": "1.1.0",
-  "description": "Uniswap Interface",
+  "description": "ETCswap Interface",
   "license": "GPL-3.0-or-later",
   "scripts": {
     "ajv": "node scripts/compile-ajv-validators.js",
@@ -166,7 +166,8 @@
     "yarn-deduplicate": "^6.0.0"
   },
   "resolutions": {
-    "@uniswap/sdk-core": "4.0.7"
+    "@uniswap/sdk-core": "git+https://github.com/etcswap/sdk-core.git#etcswap",
+    "@uniswap/universal-router-sdk": "git+https://github.com/etcswap/universal-router-sdk.git#etcswap"
   },
   "dependencies": {
     "@apollo/client": "^3.7.2",
@@ -203,12 +204,10 @@
     "@uniswap/permit2-sdk": "^1.2.0",
     "@uniswap/redux-multicall": "^1.1.8",
     "@uniswap/router-sdk": "^1.6.0",
-    "@uniswap/sdk-core": "4.0.7",
-    "@uniswap/smart-order-router": "^3.15.0",
+    "@uniswap/sdk-core": "git+https://github.com/etcswap/sdk-core.git#etcswap",    "@uniswap/smart-order-router": "^3.15.0",
     "@uniswap/token-lists": "^1.0.0-beta.33",
     "@uniswap/uniswapx-sdk": "^1.4.1",
-    "@uniswap/universal-router-sdk": "^1.5.8",
-    "@uniswap/v2-core": "^1.0.1",
+    "@uniswap/universal-router-sdk": "git+https://github.com/etcswap/universal-router-sdk.git#etcswap",    "@uniswap/v2-core": "^1.0.1",
     "@uniswap/v2-periphery": "^1.1.0-beta.0",
     "@uniswap/v2-sdk": "^3.2.0",
     "@uniswap/v3-core": "^1.0.1",

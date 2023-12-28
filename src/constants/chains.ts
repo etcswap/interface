@@ -8,6 +8,8 @@ export const CHAIN_IDS_TO_NAMES = {
   [ChainId.POLYGON_MUMBAI]: 'polygon_mumbai',
   [ChainId.CELO]: 'celo',
   [ChainId.CELO_ALFAJORES]: 'celo_alfajores',
+  [ChainId.CLASSIC]: 'classic',
+  [ChainId.CLASSIC_MORDOR]: 'classic_mordor',
   [ChainId.ARBITRUM_ONE]: 'arbitrum',
   [ChainId.ARBITRUM_GOERLI]: 'arbitrum_goerli',
   [ChainId.OPTIMISM]: 'optimism',
@@ -48,6 +50,7 @@ export const SUPPORTED_GAS_ESTIMATE_CHAIN_IDS = [
   ChainId.MAINNET,
   ChainId.POLYGON,
   ChainId.CELO,
+  ChainId.CLASSIC,
   ChainId.OPTIMISM,
   ChainId.ARBITRUM_ONE,
   ChainId.BNB,
@@ -67,6 +70,7 @@ export const TESTNET_CHAIN_IDS = [
   ChainId.ARBITRUM_GOERLI,
   ChainId.OPTIMISM_GOERLI,
   ChainId.CELO_ALFAJORES,
+  ChainId.CLASSIC_MORDOR,
 ] as const
 
 /**
@@ -80,6 +84,8 @@ export const L1_CHAIN_IDS = [
   ChainId.POLYGON_MUMBAI,
   ChainId.CELO,
   ChainId.CELO_ALFAJORES,
+  ChainId.CLASSIC,
+  ChainId.CLASSIC_MORDOR,
   ChainId.BNB,
   ChainId.AVALANCHE,
 ] as const
@@ -107,6 +113,9 @@ export type SupportedL2ChainId = (typeof L2_CHAIN_IDS)[number]
  */
 export function getChainPriority(chainId: ChainId): number {
   switch (chainId) {
+    case ChainId.CLASSIC:
+    case ChainId.CLASSIC_MORDOR:
+      return -1
     case ChainId.MAINNET:
     case ChainId.GOERLI:
     case ChainId.SEPOLIA:
@@ -135,5 +144,5 @@ export function getChainPriority(chainId: ChainId): number {
 }
 
 export function isUniswapXSupportedChain(chainId: number) {
-  return chainId === ChainId.MAINNET
+  return chainId === ChainId.CLASSIC
 }

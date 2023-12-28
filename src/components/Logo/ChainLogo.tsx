@@ -14,6 +14,7 @@ import { ReactComponent as celoLight } from './ChainSymbols/celo_light.svg'
 import { ReactComponent as ethereum } from './ChainSymbols/ethereum.svg'
 import { ReactComponent as optimism } from './ChainSymbols/optimism.svg'
 import { ReactComponent as polygon } from './ChainSymbols/polygon.svg'
+import { ReactComponent as classic } from './ChainSymbols/classic.svg'
 
 type SVG = FunctionComponent<React.SVGProps<SVGSVGElement>>
 type ChainUI = { Symbol: SVG; bgColor: string; textColor: string }
@@ -63,6 +64,13 @@ export function getChainUI(chainId: ChainId, darkMode: boolean): ChainUI | undef
             bgColor: '#FCFF5299',
             textColor: '#655947',
           }
+    case ChainId.CLASSIC:
+    case ChainId.CLASSIC_MORDOR:
+      return {
+        Symbol: classic,
+        bgColor: '#34FF9A33',
+        textColor: '#34FF9A',
+      }
     case ChainId.AVALANCHE:
       return {
         Symbol: avax,
