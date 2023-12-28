@@ -465,7 +465,7 @@ export function nativeOnChain(chainId: number): NativeCurrency | Token {
   } else if (isCelo(chainId)) {
     nativeCurrency = getCeloNativeCurrency(chainId)
   } else if (isClassic(chainId)) {
-    nativeCurrency = new EtcNativeCurrency(chainId) 
+    nativeCurrency = new EtcNativeCurrency(chainId)
   } else if (isBsc(chainId)) {
     nativeCurrency = new BscNativeCurrency(chainId)
   } else if (isAvalanche(chainId)) {

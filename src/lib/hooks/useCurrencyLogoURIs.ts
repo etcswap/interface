@@ -3,15 +3,24 @@ import useHttpLocations from 'hooks/useHttpLocations'
 import { useMemo } from 'react'
 import { isAddress } from 'utils'
 
+import ClassicLogo from '../../assets/images/classic-logo.png'
 import EthereumLogo from '../../assets/images/ethereum-logo.png'
 import AvaxLogo from '../../assets/svg/avax_logo.svg'
 import BnbLogo from '../../assets/svg/bnb-logo.svg'
 import CeloLogo from '../../assets/svg/celo_logo.svg'
 import MaticLogo from '../../assets/svg/matic-token-icon.svg'
-import ClassicLogo from '../../assets/images/classic-logo.png'
 import { isCelo, isClassic, NATIVE_CHAIN_ID, nativeOnChain } from '../../constants/tokens'
 
-type Network = 'ethereum' | 'arbitrum' | 'optimism' | 'polygon' | 'smartchain' | 'celo' | 'avalanchec' | 'base' | 'classic'
+type Network =
+  | 'ethereum'
+  | 'arbitrum'
+  | 'optimism'
+  | 'polygon'
+  | 'smartchain'
+  | 'celo'
+  | 'avalanchec'
+  | 'base'
+  | 'classic'
 
 export function chainIdToNetworkName(networkId: ChainId): Network {
   switch (networkId) {
