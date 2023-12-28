@@ -94,7 +94,7 @@ export const FALLBACK_URLS = {
   ],
   [ChainId.CLASSIC_MORDOR]: [
     // "Safe" URLs
-    `https://geth-mordor.etc-network.info	`,
+    `https://geth-mordor.etc-network.info`,
   ],
   [ChainId.CELO_ALFAJORES]: [
     // "Safe" URLs
