@@ -416,7 +416,7 @@ class EtcNativeCurrency extends NativeCurrency {
 
   public constructor(chainId: number) {
     if (!isClassic(chainId)) throw new Error('Not etc')
-    super(chainId, 18, 'ETC', 'ETC')
+    super(chainId, 18, 'ETC', 'Ether')
   }
 }
 
