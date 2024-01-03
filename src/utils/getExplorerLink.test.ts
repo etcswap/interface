@@ -12,6 +12,26 @@ describe('#getExplorerLink', () => {
   it('correct for address', () => {
     expect(getExplorerLink(1, 'abc', ExplorerDataType.ADDRESS)).toEqual('https://etherscan.io/address/abc')
   })
+  it('correct for tx on ethereum classic', () => {
+    expect(getExplorerLink(61, 'abc', ExplorerDataType.TRANSACTION)).toEqual('https://etc.blockscout.com/tx/abc')
+  })
+  it('correct for token on ethereum classic', () => {
+    expect(getExplorerLink(61, 'abc', ExplorerDataType.TOKEN)).toEqual('https://etc.blockscout.com/token/abc')
+  })
+  it('correct for address on ethereum classic', () => {
+    expect(getExplorerLink(61, 'abc', ExplorerDataType.ADDRESS)).toEqual('https://etc.blockscout.com/address/abc')
+  })
+  it('correct for tx on mordor testnet', () => {
+    expect(getExplorerLink(63, 'abc', ExplorerDataType.TRANSACTION)).toEqual('https://etc-mordor.blockscout.com/tx/abc')
+  })
+  it('correct for token on mordor testnet', () => {
+    expect(getExplorerLink(63, 'abc', ExplorerDataType.TOKEN)).toEqual('https://etc-mordor.blockscout.com/token/abc')
+  })
+  it('correct for address on mordor testnet', () => {
+    expect(getExplorerLink(63, 'abc', ExplorerDataType.ADDRESS)).toEqual(
+      'https://etc-mordor.blockscout.com/address/abc'
+    )
+  })
   it('unrecognized chain id defaults to mainnet', () => {
     expect(getExplorerLink(2, 'abc', ExplorerDataType.ADDRESS)).toEqual('https://etherscan.io/address/abc')
   })
