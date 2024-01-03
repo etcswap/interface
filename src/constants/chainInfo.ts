@@ -3,7 +3,7 @@ import ms from 'ms'
 import { darkTheme } from 'theme/colors'
 
 import { SupportedL1ChainId, SupportedL2ChainId } from './chains'
-import { ARBITRUM_LIST, AVALANCHE_LIST, BASE_LIST, CELO_LIST, OPTIMISM_LIST, PLASMA_BNB_LIST } from './lists'
+import { ARBITRUM_LIST, AVALANCHE_LIST, BASE_LIST, CELO_LIST, OPTIMISM_LIST, PLASMA_BNB_LIST, CLASSIC_LIST } from './lists'
 
 export const AVERAGE_L1_BLOCK_TIME = ms(`12s`)
 
@@ -196,7 +196,7 @@ const CHAIN_INFO: ChainInfoMap = {
     infoLink: 'https://ethereumclassic.org/knowledge',
     label: 'Ethereum Classic',
     nativeCurrency: { name: 'Ether', symbol: 'ETC', decimals: 18 },
-    // defaultListUrl: CLASSIC_LIST,
+    defaultListUrl: CLASSIC_LIST,
     color: darkTheme.chain_61,
     backgroundColor: darkTheme.chain_61_background,
   },
@@ -209,7 +209,7 @@ const CHAIN_INFO: ChainInfoMap = {
     infoLink: 'https://ethereumclassic.org/development/testnets',
     label: 'Mordor',
     nativeCurrency: { name: 'Mordor Ether', symbol: 'mETC', decimals: 18 },
-    // defaultListUrl: CLASSIC_LIST,
+    defaultListUrl: CLASSIC_LIST,
     color: darkTheme.chain_63,
     backgroundColor: darkTheme.chain_63_background,
   },
