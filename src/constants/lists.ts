@@ -18,7 +18,7 @@ const KLEROS_LIST = 't2crtokens.eth'
 const SET_LIST = 'https://raw.githubusercontent.com/SetProtocol/uniswap-tokenlist/main/set.tokenlist.json'
 const WRAPPED_LIST = 'wrapped.tokensoft.eth'
 // Chain Specifc Lists
-const CLASSIC_LIST = 'https://raw.githubusercontent.com/etcswap/tokens/main/ethereum-classic/all.json'
+export const CLASSIC_LIST = 'https://raw.githubusercontent.com/etcswap/tokens/main/ethereum-classic/all.json'
 export const OPTIMISM_LIST = 'https://static.optimism.io/optimism.tokenlist.json'
 export const ARBITRUM_LIST = 'https://bridge.arbitrum.io/token-list-42161.json'
 export const CELO_LIST = 'https://celo-org.github.io/celo-token-list/celo.tokenlist.json'
