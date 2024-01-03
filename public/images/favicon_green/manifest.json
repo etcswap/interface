@@ -47,8 +47,8 @@
 "orientation": "portrait",
 "name": "ETCswap",
 "description": "Swap or provide liquidity on the ETCswap Protocol",
-"iconPath": "./images/400x400_App_Icon_Green.svg",
+"iconPath": "./images/512x512_App_Icon_Green.svg",
 "short_name": "ETCswap",
 "start_url": ".",
-"theme_color": "#33FF99"
+"theme_color": "#FFFFFF"
 }
