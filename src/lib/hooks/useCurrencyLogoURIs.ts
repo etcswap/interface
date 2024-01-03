@@ -3,11 +3,11 @@ import useHttpLocations from 'hooks/useHttpLocations'
 import { useMemo } from 'react'
 import { isAddress } from 'utils'
 
-import ClassicLogo from '../../assets/images/classic-logo.png'
 import EthereumLogo from '../../assets/images/ethereum-logo.png'
 import AvaxLogo from '../../assets/svg/avax_logo.svg'
 import BnbLogo from '../../assets/svg/bnb-logo.svg'
 import CeloLogo from '../../assets/svg/celo_logo.svg'
+import ClassicLogo from '../../assets/svg/etc-logo.svg'
 import MaticLogo from '../../assets/svg/matic-token-icon.svg'
 import { isCelo, isClassic, NATIVE_CHAIN_ID, nativeOnChain } from '../../constants/tokens'
 
@@ -86,7 +86,7 @@ function getTokenLogoURI(address: string, chainId: ChainId = ChainId.MAINNET): s
   }
 
   if (networksWithUrls.includes(chainId)) {
-    return `https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/${networkName}/assets/${address}/logo.png`
+    return `https://raw.githubusercontent.com/etcswap/token-assets/master/blockchains/${networkName}/assets/${address}/logo.png`
   }
 }
 
