@@ -91,14 +91,18 @@ export const FALLBACK_URLS = {
   [ChainId.CLASSIC]: [
     // "Safe" URLs
     `https://etc.rivet.link`,
+    // "Fallback" URLs
     `https://besu-at.etc-network.info`,
     `https://besu-de.etc-network.info`,
     `https://geth-at.etc-network.info`,
     `https://geth-de.etc-network.info`,
+    `https://etc.mytokenpocket.vip`,
+    `https://etc.etcdesktop.com`,
   ],
   [ChainId.CLASSIC_MORDOR]: [
     // "Safe" URLs
     `https://rpc.mordor.etccooperative.org`,
+    // "Fallback" URLs
     `https://geth-mordor.etc-network.info`,
   ],
   [ChainId.CELO_ALFAJORES]: [
