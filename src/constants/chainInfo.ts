@@ -197,8 +197,8 @@ const CHAIN_INFO: ChainInfoMap = {
     label: 'Ethereum Classic',
     nativeCurrency: { name: 'Ether', symbol: 'ETC', decimals: 18 },
     // defaultListUrl: CLASSIC_LIST,
-    // color: darkTheme.chain_61,
-    // backgroundColor: darkTheme.chain_61_background,
+    color: darkTheme.chain_61,
+    backgroundColor: darkTheme.chain_61_background,
   },
   [ChainId.CLASSIC_MORDOR]: {
     networkType: NetworkType.L1,
@@ -210,8 +210,8 @@ const CHAIN_INFO: ChainInfoMap = {
     label: 'Mordor',
     nativeCurrency: { name: 'Mordor Ether', symbol: 'mETC', decimals: 18 },
     // defaultListUrl: CLASSIC_LIST,
-    // color: darkTheme.chain_63,
-    // backgroundColor: darkTheme.chain_63_background,
+    color: darkTheme.chain_63,
+    backgroundColor: darkTheme.chain_63_background,
   },
   [ChainId.BNB]: {
     networkType: NetworkType.L1,

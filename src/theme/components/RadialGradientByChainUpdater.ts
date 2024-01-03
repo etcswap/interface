@@ -93,6 +93,16 @@ export default function RadialGradientByChainUpdater(): null {
         backgroundRadialGradientElement.style.background = darkMode ? celoDarkGradient : celoLightGradient
         break
       }
+      case ChainId.CLASSIC:
+      case ChainId.CLASSIC_MORDOR: {
+        setBackground(backgroundResetStyles)
+        const classicLightGradient =
+          'radial-gradient(100% 100% at 50% 0%, rgba(51, 255, 153, 0.01) 0%, rgba(51, 255, 153, 0.1) 50%, rgba(51, 255, 153, 0.2) 100%), #FFFFFF'
+        const classicDarkGradient =
+          'radial-gradient(100% 100% at 50% 0%, rgba(51, 255, 153, 0.1) 0%, rgba(51, 255, 153, 0.05) 50%, rgba(51, 255, 153, 0.01) 100%), #131313'
+        backgroundRadialGradientElement.style.background = darkMode ? classicDarkGradient : classicLightGradient
+        break
+      }
       case ChainId.BNB: {
         setBackground(backgroundResetStyles)
         const bscLightGradient =
