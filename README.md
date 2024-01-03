@@ -1,4 +1,4 @@
-# Uniswap Labs Interface
+# ETCswap Interface
 
 [![codecov](https://codecov.io/gh/Uniswap/interface/branch/main/graph/badge.svg?token=YVT2Y86O82)](https://codecov.io/gh/Uniswap/interface)
 
@@ -8,25 +8,25 @@
 [![Release](https://github.com/Uniswap/interface/actions/workflows/release.yaml/badge.svg)](https://github.com/Uniswap/interface/actions/workflows/release.yaml)
 [![Crowdin](https://badges.crowdin.net/uniswap-interface/localized.svg)](https://crowdin.com/project/uniswap-interface)
 
-An open source interface for Uniswap -- a protocol for decentralized exchange of Ethereum tokens.
+An open source interface for ETCswap -- a protocol for decentralized exchange of Ethereum Classic tokens.
 
-- Website: [uniswap.org](https://uniswap.org/)
-- Interface: [app.uniswap.org](https://app.uniswap.org)
+- Website: [etcswap.org](https://etcswap.org/)
+- Interface: [app.etcswap.org](https://app.etcswap.org)
 - Docs: [uniswap.org/docs/](https://docs.uniswap.org/)
-- Twitter: [@Uniswap](https://twitter.com/Uniswap)
-- Reddit: [/r/Uniswap](https://www.reddit.com/r/Uniswap/)
-- Email: [contact@uniswap.org](mailto:contact@uniswap.org)
-- Discord: [Uniswap](https://discord.gg/FCfyBSbCU5)
-- Whitepapers:
+- Twitter: [@EthClassicDAO](https://twitter.com/EthClassicDAO)
+- Reddit: [/r/EthereumClassic](https://www.reddit.com/r/ethereumclassic/)
+- Email: [contact@etcswap.org](mailto:contact@etcswap.org)
+- Discord: [Ethereum Classic](https://ethereumclassic.org/discord)
+- Protocol Whitepapers:
   - [V1](https://hackmd.io/C-DvwDSfSxuh-Gd4WKE_ig)
   - [V2](https://uniswap.org/whitepaper.pdf)
   - [V3](https://uniswap.org/whitepaper-v3.pdf)
 
-## Accessing the Uniswap Interface
+## Accessing the ETCswap Interface
 
-To access the Uniswap Interface, use an IPFS gateway link from the
-[latest release](https://github.com/Uniswap/uniswap-interface/releases/latest),
-or visit [app.uniswap.org](https://app.uniswap.org).
+To access the ETCswap Interface, use an IPFS gateway link from the
+[latest release](https://github.com/etcswap/interface/releases/latest),
+or visit [app.etcswap.org](https://app.etcswap.org).
 
 ## Unsupported tokens
 
@@ -65,16 +65,16 @@ Other things to note:
 - Changes will be previewable via vercel. Non-obvious changes should include instructions for how to reproduce them
 
 
-## Accessing Uniswap V2
+## Accessing ETCswap V2: This protocol was deployed to Ethereum Classic in 2022
 
-The Uniswap Interface supports swapping, adding liquidity, removing liquidity and migrating liquidity for Uniswap protocol V2.
+The ETCswap Interface supports swapping, adding liquidity, removing liquidity and migrating liquidity for ETCswap protocol V2.
 
-- Swap on Uniswap V2: <https://app.uniswap.org/swap?use=v2>
-- View V2 liquidity: <https://app.uniswap.org/pools/v2>
-- Add V2 liquidity: <https://app.uniswap.org/add/v2>
-- Migrate V2 liquidity to V3: <https://app.uniswap.org/migrate/v2>
+- Swap on ETCswap V2: <https://app.etcswap.org/swap?use=v2>
+- View V2 liquidity: <https://app.etcswap.org/pools/v2>
+- Add V2 liquidity: <https://app.etcswap.org/add/v2>
+- Migrate V2 liquidity to V3: <https://app.etcswap.org/migrate/v2>
 
-## Accessing Uniswap V1
+## Accessing ETCswap V1: This protocol was never deployed to Ethereum Classic
 
-The Uniswap V1 interface for mainnet and testnets is accessible via IPFS gateways
-linked from the [v1.0.0 release](https://github.com/Uniswap/uniswap-interface/releases/tag/v1.0.0).
+The ETCswap V1 interface for mainnet and testnets is not accessible because this protocol was never deployed to Ethereum Classic. Deployment began with the V2 protocol.
+linked from the [v1.0.0 release](https://github.com/etcswap/uniswap-interface/releases/tag/v1.0.0).
