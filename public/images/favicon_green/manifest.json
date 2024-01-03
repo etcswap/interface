@@ -1,5 +1,5 @@
 {
- "background_color": "#fff",
+ "background_color": "#FFFFFF",
  "display": "standalone",
  "homepage_url": "https://app.etcswap.org",
  "providedBy": {
@@ -47,7 +47,7 @@
 "orientation": "portrait",
 "name": "ETCswap",
 "description": "Swap or provide liquidity on the ETCswap Protocol",
-"iconPath": "./images/512x512_App_Icon_Green.svg",
+"iconPath": "./images/120x120_App_Icon_Green.svg",
 "short_name": "ETCswap",
 "start_url": ".",
 "theme_color": "#FFFFFF"
