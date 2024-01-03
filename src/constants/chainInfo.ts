@@ -65,7 +65,7 @@ const CHAIN_INFO: ChainInfoMap = {
     docs: 'https://docs.uniswap.org/',
     explorer: 'https://etherscan.io/',
     infoLink: 'https://info.uniswap.org/#/',
-    label: 'Ethereum',
+    label: 'Ethereum Foundation',
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     color: darkTheme.chain_1,
   },

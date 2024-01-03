@@ -120,31 +120,31 @@ export function getChainPriority(chainId: ChainId): number {
   switch (chainId) {
     case ChainId.CLASSIC:
     case ChainId.CLASSIC_MORDOR:
-      return -1
+      return 0
     case ChainId.MAINNET:
     case ChainId.GOERLI:
     case ChainId.SEPOLIA:
-      return 0
+      return 1
     case ChainId.ARBITRUM_ONE:
     case ChainId.ARBITRUM_GOERLI:
-      return 1
-    case ChainId.OPTIMISM:
-    case ChainId.OPTIMISM_GOERLI:
       return 2
-    case ChainId.POLYGON:
-    case ChainId.POLYGON_MUMBAI:
+    case ChainId.AVALANCHE:
       return 3
     case ChainId.BASE:
       return 4
     case ChainId.BNB:
       return 5
-    case ChainId.AVALANCHE:
-      return 6
     case ChainId.CELO:
     case ChainId.CELO_ALFAJORES:
+      return 6
+    case ChainId.OPTIMISM:
+    case ChainId.OPTIMISM_GOERLI:
       return 7
-    default:
+    case ChainId.POLYGON:
+    case ChainId.POLYGON_MUMBAI:
       return 8
+    default:
+      return 9
   }
 }
 
