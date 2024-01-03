@@ -14,6 +14,8 @@ export const START_BLOCKS: { [key: number]: number } = {
   [ChainId.ARBITRUM_ONE]: 175,
   [ChainId.OPTIMISM]: 10028767,
   [ChainId.CELO]: 13916355,
+  [ChainId.CLASSIC]: 15131256, //  Block Number of ETCswapV2, update when V3 is deployed
+  [ChainId.CLASSIC_MORDOR]: 10151204, //  Oldest version of V3, update to last stable version
   [ChainId.BNB]: 26324014,
   [ChainId.AVALANCHE]: 31422450,
   [ChainId.BASE]: 1371680,
@@ -194,6 +196,9 @@ const CHAIN_INFO: ChainInfoMap = {
     infoLink: 'https://ethereumclassic.org/knowledge',
     label: 'Ethereum Classic',
     nativeCurrency: { name: 'Ether', symbol: 'ETC', decimals: 18 },
+    // defaultListUrl: CLASSIC_LIST,
+    // color: darkTheme.chain_61,
+    // backgroundColor: darkTheme.chain_61_background,
   },
   [ChainId.CLASSIC_MORDOR]: {
     networkType: NetworkType.L1,
@@ -204,6 +209,9 @@ const CHAIN_INFO: ChainInfoMap = {
     infoLink: 'https://ethereumclassic.org/development/testnets',
     label: 'Mordor',
     nativeCurrency: { name: 'Mordor Ether', symbol: 'mETC', decimals: 18 },
+    // defaultListUrl: CLASSIC_LIST,
+    // color: darkTheme.chain_63,
+    // backgroundColor: darkTheme.chain_63_background,
   },
   [ChainId.BNB]: {
     networkType: NetworkType.L1,
