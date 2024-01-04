@@ -6125,7 +6125,7 @@
 
 "@uniswap/sdk-core@>= 3", "@uniswap/sdk-core@^4", "@uniswap/sdk-core@^4.0.0", "@uniswap/sdk-core@^4.0.2", "@uniswap/sdk-core@^4.0.3", "@uniswap/sdk-core@^4.0.6", "@uniswap/sdk-core@git+https://github.com/etcswap/sdk-core.git#etcswap":
   version "4.0.10"
-  resolved "git+https://github.com/etcswap/sdk-core.git#a68914dade9a57a741a5497879edb59c99500927"
+  resolved "git+https://github.com/etcswap/sdk-core.git#a251d7982a90d9e68331583b9a6c348ea5677e33"
   dependencies:
     "@ethersproject/address" "^5.0.2"
     big.js "^5.2.2"
