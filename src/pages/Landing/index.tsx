@@ -362,9 +362,9 @@ export default function Landing() {
         <ContentContainer isDarkMode={isDarkMode}>
           <TitleText isDarkMode={isDarkMode}>
             {shouldDisableNFTRoutes ? (
-              <Trans>Trade crypto on Ethereum Classic</Trans>
+              <Trans>Trade Crypto on Ethereum Classic</Trans>
             ) : (
-              <Trans>Trade crypto and NFTs on Ethereum Classic</Trans>
+              <Trans>Trade Crypto and NFTs on Ethereum Classic</Trans>
             )}
           </TitleText>
           <SubTextContainer>
