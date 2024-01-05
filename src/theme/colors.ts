@@ -177,7 +177,7 @@ const commonTheme = {
   promotional: colors.networkClassic,
   promotional_background: colors.networkClassicSoft,
 
-  brandedGradient: 'linear-gradient(#1AFF8C 1%, #4DFFA6 5%, #80FFB3 95%);',
+  brandedGradient: 'linear-gradient(139.57deg, #4DFFA6 5%, #80FFB3 95%);',
   promotionalGradient: colors.accent1_light,
 }
 

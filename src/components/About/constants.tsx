@@ -14,7 +14,7 @@ export const MAIN_CARDS = [
   {
     to: '/swap',
     title: 'Swap tokens',
-    description: 'Buy, sell, and explore tokens on Ethereum, Polygon, Optimism, and more.',
+    description: 'Buy, sell, and explore tokens on Ethereum Classic and other EVM compatible layer 1 & 2 chains.',
     cta: 'Trade Tokens',
     darkBackgroundImgSrc: swapCardImgSrc,
     lightBackgroundImgSrc: swapCardImgSrc,
@@ -40,32 +40,32 @@ const StyledCardLogo = styled.img`
 
 export const MORE_CARDS = [
   {
-    to: 'https://support.uniswap.org/hc/en-us/articles/11306574799117-How-to-use-Moon-Pay-on-the-Uniswap-web-app-',
+    to: 'https://gateway.ethereumclassic.com',
     external: true,
     title: 'Buy crypto',
     description: 'Buy crypto with your credit card or bank account at the best rates.',
     lightIcon: <DollarSign color={lightTheme.neutral3} size={48} />,
     darkIcon: <StyledCardLogo src={darkDollarImgSrc} alt="Earn" />,
-    cta: 'Buy now',
+    cta: 'Buy ETC now',
     elementName: InterfaceElementName.ABOUT_PAGE_BUY_CRYPTO_CARD,
   },
   {
     to: '/pools',
     title: 'Earn',
-    description: 'Provide liquidity to pools on Uniswap and earn fees on swaps.',
+    description: 'Provide liquidity to pools on ETCswap and earn fees on swaps.',
     lightIcon: <StyledCardLogo src={lightArrowImgSrc} alt="Analytics" />,
     darkIcon: <StyledCardLogo src={darkArrowImgSrc} alt="Analytics" />,
     cta: 'Provide liquidity',
     elementName: InterfaceElementName.ABOUT_PAGE_EARN_CARD,
   },
   {
-    to: 'https://docs.uniswap.org',
+    to: 'https://ethereumclassic.org',
     external: true,
     title: 'Build dApps',
-    description: 'Build apps and tools on the largest DeFi protocol on Ethereum.',
+    description: 'Build apps and tools on the most secure DeFi protocol stack in the world.',
     lightIcon: <Terminal color={lightTheme.neutral3} size={48} />,
     darkIcon: <StyledCardLogo src={darkTerminalImgSrc} alt="Developers" />,
-    cta: 'Developer docs',
+    cta: 'Ethereum Classic',
     elementName: InterfaceElementName.ABOUT_PAGE_DEV_DOCS_CARD,
   },
 ]
