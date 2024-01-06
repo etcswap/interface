@@ -1,7 +1,7 @@
 import { ChainId, CurrencyAmount, Token, V3_CORE_FACTORY_ADDRESSES } from '@uniswap/sdk-core'
 import IUniswapV3PoolStateJSON from '@uniswap/v3-core/artifacts/contracts/interfaces/pool/IUniswapV3PoolState.sol/IUniswapV3PoolState.json'
 import { computePoolAddress, Pool, Position } from '@uniswap/v3-sdk'
-import { DEFAULT_ERC20_DECIMALS } from 'constants/tokens'
+import { DEFAULT_ERC20_DECIMALS, ETC_INIT_CODE_HASH } from 'constants/tokens'
 import { BigNumber } from 'ethers/lib/ethers'
 import { Interface } from 'ethers/lib/utils'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
@@ -134,7 +134,14 @@ export default function useMultiChainPositions(account: string, chains = DEFAULT
         let poolAddress = poolAddressCache.get(details, chainId)
         if (!poolAddress) {
           const factoryAddress = V3_CORE_FACTORY_ADDRESSES[chainId]
-          poolAddress = computePoolAddress({ factoryAddress, tokenA, tokenB, fee: details.fee })
+          const initCodeHashManualOverride = chainId == 63 || chainId == 61 ? ETC_INIT_CODE_HASH : undefined
+          poolAddress = computePoolAddress({
+            factoryAddress,
+            tokenA,
+            tokenB,
+            fee: details.fee,
+            initCodeHashManualOverride,
+          })
           poolAddressCache.set(details, chainId, poolAddress)
         }
         poolPairs.push([tokenA, tokenB])

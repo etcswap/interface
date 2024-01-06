@@ -6203,7 +6203,7 @@
 
 "@uniswap/universal-router-sdk@^1.5.4", "@uniswap/universal-router-sdk@git+https://github.com/etcswap/universal-router-sdk.git#etcswap":
   version "2.0.1"
-  resolved "git+https://github.com/etcswap/universal-router-sdk.git#feeb6f58ab0d1afafe7d5cdb6e3ae81237bfd38a"
+  resolved "git+https://github.com/etcswap/universal-router-sdk.git#93d26cc50e512c6884005ebaf59e6dbbeade261a"
   dependencies:
     "@uniswap/permit2-sdk" "^1.2.0"
     "@uniswap/router-sdk" "^1.6.0"

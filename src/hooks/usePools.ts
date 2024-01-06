@@ -4,6 +4,7 @@ import IUniswapV3PoolStateJSON from '@uniswap/v3-core/artifacts/contracts/interf
 import { computePoolAddress } from '@uniswap/v3-sdk'
 import { FeeAmount, Pool } from '@uniswap/v3-sdk'
 import { useWeb3React } from '@web3-react/core'
+import { ETC_INIT_CODE_HASH } from 'constants/tokens'
 import JSBI from 'jsbi'
 import { useMultipleContractSingleData } from 'lib/hooks/multicall'
 import { useMemo } from 'react'
@@ -33,6 +34,12 @@ class PoolCache {
     const found = this.addresses.find((address) => address.key === key)
     if (found) return found.address
 
+    // ETCswap has a different init code hash
+    const initCodeHashManualOverride =
+      factoryAddress == V3_CORE_FACTORY_ADDRESSES[61] || factoryAddress == V3_CORE_FACTORY_ADDRESSES[63]
+        ? ETC_INIT_CODE_HASH
+        : undefined
+
     const address = {
       key,
       address: computePoolAddress({
@@ -40,6 +47,7 @@ class PoolCache {
         tokenA,
         tokenB,
         fee,
+        initCodeHashManualOverride,
       }),
     }
     this.addresses.unshift(address)
