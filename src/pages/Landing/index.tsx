@@ -1,7 +1,7 @@
 import { Trans } from '@lingui/macro'
 import { BrowserEvent, InterfaceElementName, InterfacePageName, SharedEventName } from '@uniswap/analytics-events'
 import { Trace, TraceEvent } from 'analytics'
-import { ReactComponent as UniswapAppLogo } from 'assets/svg/uniswap_app_logo.svg'
+import { ReactComponent as CoinbaseAppLogo } from 'assets/wallets/coinbase-icon.svg'
 import { AboutFooter } from 'components/About/AboutFooter'
 import Card, { CardType } from 'components/About/Card'
 import { MAIN_CARDS, MORE_CARDS } from 'components/About/constants'
@@ -371,15 +371,15 @@ export default function Landing() {
             <SubText>
               {shouldDisableNFTRoutes ? (
                 <Trans>
-                  Buy, sell, and explore tokens on the
+                  Buy, sell, and explore digital assets on
                   <br />
-                  most secure smart contract blockchain in the world
+                  the most secure smart contract blockchain in the world
                 </Trans>
               ) : (
                 <Trans>
-                  Buy, sell, and explore tokens and NFTs on the
+                  Buy, sell, and explore digital assets & collectables on
                   <br />
-                  most secure smart contract blockchain in the world
+                  the most secure smart contract blockchain in the world
                 </Trans>
               )}
             </SubText>
@@ -413,13 +413,13 @@ export default function Landing() {
           >
             {isAndroidGALaunched ? (
               <>
-                <UniswapAppLogo width="20" height="20" />
-                Download the Uniswap app
+                <CoinbaseAppLogo width="20" height="20" />
+                Download the Coinbase Wallet
               </>
             ) : (
               <>
                 <AppleLogo width="20" height="20" />
-                Download the Uniswap app for iOS
+                Download the Coinbase Wallet for iOS
               </>
             )}
           </DownloadWalletLink>

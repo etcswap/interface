@@ -1,6 +1,7 @@
 import { t, Trans } from '@lingui/macro'
 import { InterfaceElementName } from '@uniswap/analytics-events'
 import { ReactComponent as AppleLogo } from 'assets/svg/apple_logo.svg'
+import { ReactComponent as CoinbaseAppLogo } from 'assets/wallets/coinbase-icon.svg'
 import FeatureFlagModal from 'components/FeatureFlagModal/FeatureFlagModal'
 import { PrivacyPolicyModal } from 'components/PrivacyPolicy'
 import { useAndroidGALaunchFlagEnabled } from 'featureFlags/flags/androidGALaunch'
@@ -26,7 +27,6 @@ import { ThemedText } from 'theme/components'
 import { isDevelopmentEnv, isStagingEnv } from 'utils/env'
 import { openDownloadApp } from 'utils/openDownloadApp'
 
-import { ReactComponent as UniswapAppLogo } from '../../assets/svg/uniswap_app_logo.svg'
 import { ApplicationModal } from '../../state/application/reducer'
 import * as styles from './MenuDropdown.css'
 import { NavDropdown } from './NavDropdown'
@@ -183,11 +183,11 @@ export const MenuDropdown = () => {
                     {isAndroidGALaunched ? (
                       <>
                         <Icon>
-                          <UniswapAppLogo width="24px" height="24px" />
+                          <CoinbaseAppLogo width="24px" height="24px" />
                         </Icon>
                         <div>
                           <ThemedText.BodyPrimary>
-                            <Trans>Download Uniswap</Trans>
+                            <Trans>Download Coinbase Wallet</Trans>
                           </ThemedText.BodyPrimary>
                           <ThemedText.LabelSmall>
                             <Trans>Available on iOS and Android</Trans>
@@ -200,7 +200,7 @@ export const MenuDropdown = () => {
                           <AppleLogo width="24px" height="24px" fill={theme.neutral1} />
                         </Icon>
                         <PrimaryMenuRow.Text>
-                          <Trans>Download Uniswap app</Trans>
+                          <Trans>Download Coinbase Wallet</Trans>
                         </PrimaryMenuRow.Text>
                       </>
                     )}

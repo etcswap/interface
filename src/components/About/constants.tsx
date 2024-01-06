@@ -13,18 +13,18 @@ import swapCardImgSrc from './images/swapCard.png'
 export const MAIN_CARDS = [
   {
     to: '/swap',
-    title: 'Swap tokens',
+    title: 'Swap Digital Assets',
     description: 'Buy, sell, and explore tokens on Ethereum Classic and other EVM compatible layer 1 & 2 chains.',
-    cta: 'Trade Tokens',
+    cta: 'Trade Digital Assets',
     darkBackgroundImgSrc: swapCardImgSrc,
     lightBackgroundImgSrc: swapCardImgSrc,
     elementName: InterfaceElementName.ABOUT_PAGE_SWAP_CARD,
   },
   {
     to: '/nfts',
-    title: 'Trade NFTs',
-    description: 'Buy and sell NFTs across marketplaces to find more listings at better prices.',
-    cta: 'Explore NFTs',
+    title: 'Trade Collectables',
+    description: 'Buy, sell and explore NFT collectables across marketplaces to find more listings at better prices.',
+    cta: 'Explore NFT Collectables',
     darkBackgroundImgSrc: nftCardImgSrc,
     lightBackgroundImgSrc: nftCardImgSrc,
     elementName: InterfaceElementName.ABOUT_PAGE_NFTS_CARD,
@@ -52,10 +52,10 @@ export const MORE_CARDS = [
   {
     to: '/pools',
     title: 'Earn',
-    description: 'Provide liquidity to pools on ETCswap and earn fees on swaps.',
+    description: 'Provide liquidity to pools on ETCswap and earn from protocol fees on swaps.',
     lightIcon: <StyledCardLogo src={lightArrowImgSrc} alt="Analytics" />,
     darkIcon: <StyledCardLogo src={darkArrowImgSrc} alt="Analytics" />,
-    cta: 'Provide liquidity',
+    cta: 'Provide liquidity to ETCswap',
     elementName: InterfaceElementName.ABOUT_PAGE_EARN_CARD,
   },
   {
@@ -65,7 +65,7 @@ export const MORE_CARDS = [
     description: 'Build apps and tools on the most secure DeFi protocol stack in the world.',
     lightIcon: <Terminal color={lightTheme.neutral3} size={48} />,
     darkIcon: <StyledCardLogo src={darkTerminalImgSrc} alt="Developers" />,
-    cta: 'Ethereum Classic',
+    cta: 'Build on Ethereum Classic',
     elementName: InterfaceElementName.ABOUT_PAGE_DEV_DOCS_CARD,
   },
 ]

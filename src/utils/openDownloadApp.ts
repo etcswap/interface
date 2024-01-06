@@ -4,13 +4,13 @@ import { isAndroid, isIOS } from 'utils/userAgent'
 
 // OneLink will direct to App/Play Store or microsite depending on user agent
 const APP_DOWNLOAD_LINKS: Partial<{ [key in InterfaceElementName]: string }> = {
-  [InterfaceElementName.UNISWAP_WALLET_MODAL_DOWNLOAD_BUTTON]: 'https://uniswapwallet.onelink.me/8q3y/qfwlncf9',
-  [InterfaceElementName.UNISWAP_WALLET_NAVBAR_MENU_DOWNLOAD_BUTTON]: 'https://uniswapwallet.onelink.me/8q3y/46tvu6pb',
-  [InterfaceElementName.UNISWAP_WALLET_LANDING_PAGE_DOWNLOAD_BUTTON]: 'https://uniswapwallet.onelink.me/8q3y/79gveilz',
-  [InterfaceElementName.UNISWAP_WALLET_BANNER_DOWNLOAD_BUTTON]: 'https://uniswapwallet.onelink.me/8q3y/jh9orof3',
+  [InterfaceElementName.UNISWAP_WALLET_MODAL_DOWNLOAD_BUTTON]: 'https://www.coinbase.com/wallet',
+  [InterfaceElementName.UNISWAP_WALLET_NAVBAR_MENU_DOWNLOAD_BUTTON]: 'https://www.coinbase.com/wallet',
+  [InterfaceElementName.UNISWAP_WALLET_LANDING_PAGE_DOWNLOAD_BUTTON]: 'https://www.coinbase.com/wallet',
+  [InterfaceElementName.UNISWAP_WALLET_BANNER_DOWNLOAD_BUTTON]: 'https://www.coinbase.com/wallet',
 }
 
-export const MICROSITE_LINK = 'https://wallet.uniswap.org/'
+export const MICROSITE_LINK = 'https://www.coinbase.com/wallet'
 
 type OpenDownloadAppOptions = {
   element: InterfaceElementName
