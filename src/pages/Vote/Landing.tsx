@@ -160,14 +160,14 @@ export default function Landing() {
                 <AutoColumn gap="md">
                   <RowBetween>
                     <ThemedText.DeprecatedWhite fontWeight={535}>
-                      <Trans>Uniswap governance</Trans>
+                      <Trans>Ethereum Classic DAO governance</Trans>
                     </ThemedText.DeprecatedWhite>
                   </RowBetween>
                   <RowBetween>
                     <ThemedText.DeprecatedWhite fontSize={14}>
                       <Trans>
-                        UNI tokens represent voting shares in Uniswap governance. You can vote on each proposal yourself
-                        or delegate your votes to a third party.
+                        ECO tokens represent voting shares in Ethereum Classic DAO governance. You can vote on each
+                        proposal yourself or delegate your votes to a third party.
                       </Trans>
                     </ThemedText.DeprecatedWhite>
                   </RowBetween>
@@ -176,11 +176,11 @@ export default function Landing() {
                       color: theme.white,
                       textDecoration: 'underline',
                     }}
-                    href="https://uniswap.org/blog/uni"
+                    href="https://eco.ethereumclassic.com"
                     target="_blank"
                   >
                     <ThemedText.DeprecatedWhite fontSize={14}>
-                      <Trans>Read more about Uniswap governance</Trans>
+                      <Trans>Read more about Ethereum Classic DAO governance</Trans>
                     </ThemedText.DeprecatedWhite>
                   </ExternalLink>
                 </AutoColumn>
@@ -294,7 +294,9 @@ export default function Landing() {
           </TopSection>
 
           <ThemedText.DeprecatedSubHeader color="text3">
-            <Trans>A minimum threshold of 0.25% of the total UNI supply is required to submit proposals</Trans>
+            <Trans>
+              A minimum threshold of 0.25% of the circulating ECO supply is required to submit proposals <br />
+            </Trans>
           </ThemedText.DeprecatedSubHeader>
         </PageWrapper>
       </Trace>

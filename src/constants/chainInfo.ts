@@ -186,7 +186,7 @@ const CHAIN_INFO: ChainInfoMap = {
     docs: 'https://docs.bnbchain.org/',
     explorer: 'https://bscscan.com/',
     infoLink: 'https://info.uniswap.org/#/bnb/',
-    label: 'BNB Chain',
+    label: 'BNB Smart Chain',
     nativeCurrency: { name: 'BNB', symbol: 'BNB', decimals: 18 },
     defaultListUrl: PLASMA_BNB_LIST,
     color: darkTheme.chain_56,

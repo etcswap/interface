@@ -1,5 +1,7 @@
 import { Trans } from '@lingui/macro'
 import { InterfaceElementName } from '@uniswap/analytics-events'
+import darkAndroidThumbnail from 'assets/wallets/coinbase-icon.svg'
+import lightAndroidThumbnail from 'assets/wallets/coinbase-icon.svg'
 import { useAndroidGALaunchFlagEnabled } from 'featureFlags/flags/androidGALaunch'
 import { useScreenSize } from 'hooks/useScreenSize'
 import { useLocation } from 'react-router-dom'
@@ -10,8 +12,6 @@ import { openDownloadApp } from 'utils/openDownloadApp'
 import { isMobileSafari } from 'utils/userAgent'
 
 import androidAnnouncementBannerQR from '../../../assets/images/androidAnnouncementBannerQR.png'
-import darkAndroidThumbnail from '../../../assets/images/AndroidWallet-Thumbnail-Dark.png'
-import lightAndroidThumbnail from '../../../assets/images/AndroidWallet-Thumbnail-Light.png'
 import {
   Container,
   DownloadButton,
@@ -46,7 +46,7 @@ export default function AndroidAnnouncementBanner() {
         <Thumbnail src={isDarkMode ? darkAndroidThumbnail : lightAndroidThumbnail} alt="Android app thumbnail" />
         <TextContainer onClick={!screenSize['xs'] ? onClick : undefined}>
           <ThemedText.BodySmall lineHeight="20px">
-            <Trans>Uniswap on Android</Trans>
+            <Trans>Coinbase Wallet on Android</Trans>
           </ThemedText.BodySmall>
           <ThemedText.LabelMicro>
             <Trans>Available now - download from the Google Play Store today</Trans>

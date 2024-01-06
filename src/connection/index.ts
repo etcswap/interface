@@ -177,7 +177,7 @@ const coinbaseWalletConnection: Connection = {
   // If on a mobile browser that isn't the coinbase wallet browser, deeplink to the coinbase wallet app
   overrideActivate: () => {
     if (isMobile && !getIsInjectedMobileBrowser()) {
-      window.open('https://go.cb-w.com/mtUDhEZPy1', 'cbwallet')
+      window.open('https://www.coinbase.com/wallet', 'cbwallet')
       return true
     }
     return false
@@ -185,11 +185,11 @@ const coinbaseWalletConnection: Connection = {
 }
 
 export const connections = [
+  coinbaseWalletConnection,
+  injectedConnection,
   gnosisSafeConnection,
   uniwalletWCV2ConnectConnection,
-  injectedConnection,
   walletConnectV2Connection,
-  coinbaseWalletConnection,
   networkConnection,
   deprecatedNetworkConnection,
 ]

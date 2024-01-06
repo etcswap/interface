@@ -31,8 +31,8 @@ export default function ConnectedAccountBlocked(props: ConnectedAccountBlockedPr
           {props.account}
         </ThemedText.DeprecatedDarkGray>
         <ThemedText.DeprecatedMain fontSize={14} marginBottom={12}>
-          <Trans>This address is blocked on the Uniswap Labs interface because it is associated with one or more</Trans>{' '}
-          <ExternalLink href="https://help.uniswap.org/en/articles/6149816">
+          <Trans>This address is blocked on the ETCswap interface because it is associated with one or more</Trans>{' '}
+          <ExternalLink href="https://etcswap.org/blocked-activities">
             <Trans>blocked activities</Trans>
           </ExternalLink>
           .
@@ -42,13 +42,13 @@ export default function ConnectedAccountBlocked(props: ConnectedAccountBlockedPr
         </ThemedText.DeprecatedMain>
 
         <CopyHelper
-          toCopy="compliance@uniswap.org"
+          toCopy="compliance@etcswap.org"
           fontSize={14}
           iconSize={16}
           color={theme.accent1}
           iconPosition="right"
         >
-          compliance@uniswap.org
+          compliance@etcswap.org
         </CopyHelper>
       </ContentWrapper>
     </Modal>

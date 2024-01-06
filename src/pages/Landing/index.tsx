@@ -1,7 +1,7 @@
 import { Trans } from '@lingui/macro'
 import { BrowserEvent, InterfaceElementName, InterfacePageName, SharedEventName } from '@uniswap/analytics-events'
 import { Trace, TraceEvent } from 'analytics'
-import { ReactComponent as UniswapAppLogo } from 'assets/svg/uniswap_app_logo.svg'
+import { ReactComponent as CoinbaseAppLogo } from 'assets/wallets/coinbase-icon.svg'
 import { AboutFooter } from 'components/About/AboutFooter'
 import Card, { CardType } from 'components/About/Card'
 import { MAIN_CARDS, MORE_CARDS } from 'components/About/constants'
@@ -80,7 +80,7 @@ const Glow = styled.div`
   position: absolute;
   top: 68px;
   bottom: 0;
-  background: radial-gradient(72.04% 72.04% at 50% 3.99%, #ff37eb 0%, rgba(166, 151, 255, 0) 100%);
+  background: radial-gradient(72.04% 72.04% at 50% 3.99%, #33ff99 0%, rgba(51, 255, 153, 0.05) 100%);
   filter: blur(72px);
   border-radius: 24px;
   max-width: 480px;
@@ -134,10 +134,10 @@ const TitleText = styled.h1<{ isDarkMode: boolean }>`
   ${({ isDarkMode }) =>
     isDarkMode
       ? css`
-          background: linear-gradient(20deg, rgba(255, 244, 207, 1) 10%, rgba(255, 87, 218, 1) 100%);
+          background: linear-gradient(20deg, rgba(230, 255, 242, 1) 10%, rgba(51, 255, 153, 1) 100%);
         `
       : css`
-          background: linear-gradient(10deg, rgba(255, 79, 184, 1) 0%, rgba(255, 159, 251, 1) 100%);
+          background: linear-gradient(10deg, rgba(51, 255, 153, 1) 0%, rgba(153, 255, 201, 1) 100%);
         `};
   background-clip: text;
   -webkit-background-clip: text;
@@ -179,13 +179,13 @@ const LandingButton = styled(BaseButton)`
 `
 
 const ButtonCTA = styled(LandingButton)`
-  background: linear-gradient(93.06deg, #ff00c7 2.66%, #ff9ffb 98.99%);
+  background: linear-gradient(93.06deg, #00cc66 2.66%, #33ff99 98.99%);
   border: none;
   color: ${({ theme }) => theme.white};
   transition: ${({ theme }) => `all ${theme.transition.duration.medium} ${theme.transition.timing.ease}`};
 
   &:hover {
-    box-shadow: 0px 0px 16px 0px #ff00c7;
+    box-shadow: 0px 0px 16px 0px #13131333;
   }
 `
 
@@ -362,17 +362,25 @@ export default function Landing() {
         <ContentContainer isDarkMode={isDarkMode}>
           <TitleText isDarkMode={isDarkMode}>
             {shouldDisableNFTRoutes ? (
-              <Trans>Trade crypto with confidence</Trans>
+              <Trans>Trade Crypto on Ethereum Classic</Trans>
             ) : (
-              <Trans>Trade crypto and NFTs with confidence</Trans>
+              <Trans>Trade Crypto and NFTs on Ethereum Classic</Trans>
             )}
           </TitleText>
           <SubTextContainer>
             <SubText>
               {shouldDisableNFTRoutes ? (
-                <Trans>Buy, sell, and explore tokens</Trans>
+                <Trans>
+                  Buy, sell, and explore digital assets on
+                  <br />
+                  the most secure smart contract blockchain in the world
+                </Trans>
               ) : (
-                <Trans>Buy, sell, and explore tokens and NFTs</Trans>
+                <Trans>
+                  Buy, sell, and explore digital assets & collectables on
+                  <br />
+                  the most secure smart contract blockchain in the world
+                </Trans>
               )}
             </SubText>
           </SubTextContainer>
@@ -405,13 +413,13 @@ export default function Landing() {
           >
             {isAndroidGALaunched ? (
               <>
-                <UniswapAppLogo width="20" height="20" />
-                Download the Uniswap app
+                <CoinbaseAppLogo width="20" height="20" />
+                Download the Coinbase Wallet
               </>
             ) : (
               <>
                 <AppleLogo width="20" height="20" />
-                Download the Uniswap app for iOS
+                Download the Coinbase Wallet for iOS
               </>
             )}
           </DownloadWalletLink>

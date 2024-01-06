@@ -110,8 +110,8 @@ export const SearchBar = () => {
   const placeholderText = isMobileOrTablet
     ? t(i18n)`Search`
     : shouldDisableNFTRoutes
-    ? t(i18n)`Search tokens`
-    : t(i18n)`Search tokens and NFT collections`
+    ? t(i18n)`Search digital assets`
+    : t(i18n)`Search digital assets and NFT collectables`
 
   const handleKeyPress = useCallback(
     (event: any) => {

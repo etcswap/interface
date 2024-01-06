@@ -5,7 +5,7 @@ import { useIsDarkMode } from 'theme/components/ThemeToggle'
 
 import meshSrc from './images/Mesh.png'
 
-const DARK_MODE_GRADIENT = 'radial-gradient(101.8% 4091.31% at 0% 0%, #4673FA 0%, #9646FA 100%)'
+const DARK_MODE_GRADIENT = 'radial-gradient(101.8% 4091.31% at 0% 0%, #006633 0%, #00cc66 100%)'
 
 const Banner = styled.div<{ isDarkMode: boolean }>`
   height: 340px;
@@ -25,7 +25,7 @@ const Banner = styled.div<{ isDarkMode: boolean }>`
   background: ${({ isDarkMode }) =>
     isDarkMode
       ? `url(${meshSrc}), ${DARK_MODE_GRADIENT}`
-      : `url(${meshSrc}), linear-gradient(93.06deg, #FF00C7 2.66%, #FF9FFB 98.99%);`};
+      : `url(${meshSrc}), linear-gradient(93.06deg, #00cc66 2.66%, #33ff99 98.99%);`};
 
   @media screen and (min-width: ${BREAKPOINTS.lg}px) {
     height: 140px;
@@ -89,13 +89,22 @@ const ProtocolBanner = () => {
   return (
     <Banner isDarkMode={isDarkMode}>
       <TextContainer>
-        <HeaderText>Powered by the Uniswap Protocol</HeaderText>
+        <HeaderText>Powered by Ethereum Classic</HeaderText>
         <DescriptionText>
-          The leading decentralized crypto trading protocol, governed by a global community.
+          Applications on Ethereum Classic have been operating uninterrupted for a year longer than on Ethereum™
+          Foundation, making ETC the longest running and most reliable Smart Contract Platform. More importantly,
+          Ethereum Classic has never and will never stop or interfere with Smart Contracts deployed to it, as
+          unstoppability is what makes blockchains useful and valuable.
         </DescriptionText>
       </TextContainer>
       <BannerButtonContainer>
-        <BannerButton width="200px" as="a" href="https://uniswap.org" rel="noopener noreferrer" target="_blank">
+        <BannerButton
+          width="200px"
+          as="a"
+          href="https://ethereumclassic.org/why-classic"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           Learn more
         </BannerButton>
       </BannerButtonContainer>

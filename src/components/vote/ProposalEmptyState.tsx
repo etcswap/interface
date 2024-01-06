@@ -41,11 +41,12 @@ export default function ProposalEmptyState() {
   if (chainId && chainId !== ChainId.MAINNET) {
     return (
       <EmptyState
-        HeaderContent={() => <Trans>Please connect to Layer 1 Ethereum</Trans>}
+        HeaderContent={() => <Trans>Please connect to Ethereum Classic Mainnet</Trans>}
         SubHeaderContent={() => (
           <Trans>
-            Uniswap governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals
-            and Vote.
+            Ethereum Classic DAO governance is only available on Layer 1.
+            <br />
+            Switch your network to Ethereum Classic Mainnet to view Proposals and Vote.
           </Trans>
         )}
       />
