@@ -5,7 +5,7 @@ import { useWeb3React } from '@web3-react/core'
 import { Trace } from 'analytics'
 import { ButtonPrimary } from 'components/Button'
 import { AutoColumn } from 'components/Column'
-import { CardBGImage, CardNoise, CardSection, DataCard } from 'components/earn/styled'
+import { CardDaoDark, CardNoise, CardSection, DataCard } from 'components/earn/styled'
 import FormattedCurrencyAmount from 'components/FormattedCurrencyAmount'
 import Loader from 'components/Icons/LoadingSpinner'
 import { AutoRow, RowBetween, RowFixed } from 'components/Row'
@@ -86,7 +86,7 @@ const ProposalTitle = styled.span`
 `
 
 const VoteCard = styled(DataCard)`
-  background: radial-gradient(76.02% 75.41% at 1.84% 0%, #27ae60 0%, #000000 100%);
+  background: radial-gradient(76.02% 75.41% at 1.84% 0%, #33ff99 0%, #131313 100%);
   overflow: hidden;
 `
 
@@ -154,20 +154,25 @@ export default function Landing() {
           />
           <TopSection gap="md">
             <VoteCard>
-              <CardBGImage />
+              <CardDaoDark />
               <CardNoise />
               <CardSection>
                 <AutoColumn gap="md">
                   <RowBetween>
                     <ThemedText.DeprecatedWhite fontWeight={535}>
-                      <Trans>Ethereum Classic DAO governance</Trans>
+                      <Trans>Ethereum Classic DAO Governance</Trans>
                     </ThemedText.DeprecatedWhite>
                   </RowBetween>
                   <RowBetween>
                     <ThemedText.DeprecatedWhite fontSize={14}>
                       <Trans>
-                        ECO tokens represent voting shares in Ethereum Classic DAO governance. You can vote on each
-                        proposal yourself or delegate your votes to a third party.
+                        The mission of Ethereum Classic DAO is to deploy necessary DeFi 1.0 primitives to the
+                        application layer of the Ethereum Classic network. The DeFi protocol fees are used to seed a
+                        positive feedback funding loop with an end goal of establishing a sustainble funding source for
+                        the Ethereum Classic network. In this application layer protocol stack, ECO tokens represent
+                        voting shares in Ethereum Classic DAO governance. You can earn ECO through various
+                        protocol-specific usage mechanisms or simply buy ECO directly on ETCswap dex marketplace. You
+                        can vote on each proposal yourself or delegate your ECO votes to a third party.
                       </Trans>
                     </ThemedText.DeprecatedWhite>
                   </RowBetween>
@@ -180,12 +185,12 @@ export default function Landing() {
                     target="_blank"
                   >
                     <ThemedText.DeprecatedWhite fontSize={14}>
-                      <Trans>Read more about Ethereum Classic DAO governance</Trans>
+                      <Trans>Read more about ECO, the Ecosystem Reward token</Trans>
                     </ThemedText.DeprecatedWhite>
                   </ExternalLink>
                 </AutoColumn>
               </CardSection>
-              <CardBGImage />
+              <CardDaoDark />
               <CardNoise />
             </VoteCard>
           </TopSection>
@@ -295,7 +300,7 @@ export default function Landing() {
 
           <ThemedText.DeprecatedSubHeader color="text3">
             <Trans>
-              A minimum threshold of 0.25% of the circulating ECO supply is required to submit proposals <br />
+              A minimum threshold of ECO&apos;s circulating supply is required to submit proposals <br />
             </Trans>
           </ThemedText.DeprecatedSubHeader>
         </PageWrapper>

@@ -99,10 +99,18 @@ export default function DelegateModal({ isOpen, onDismiss, title }: VoteModalPro
               <StyledClosed stroke="black" onClick={wrappedOnDismiss} />
             </RowBetween>
             <ThemedText.DeprecatedBody>
-              <Trans>Earned ECO tokens represent voting shares in Ethereum Classic governance.</Trans>
+              <Trans>Earned ECO tokens represent voting shares in Ethereum Classic DAO governance.</Trans>
             </ThemedText.DeprecatedBody>
             <ThemedText.DeprecatedBody>
-              <Trans>You can either vote on each proposal yourself or delegate your votes to a third party.</Trans>
+              <Trans>
+                The mission of Ethereum Classic DAO is to deploy necessary DeFi 1.0 primitives to the application layer
+                of the Ethereum Classic network. The DeFi protocol fees are used to seed a positive feedback funding
+                loop with an end goal of establishing a sustainble funding source for the Ethereum Classic network. In
+                this application layer protocol stack, ECO tokens represent voting shares in Ethereum Classic DAO
+                governance. You can earn ECO through various protocol-specific usage mechanisms or simply buy ECO
+                directly on ETCswap dex marketplace. You can vote on each proposal yourself or delegate your ECO votes
+                to a third party.
+              </Trans>
             </ThemedText.DeprecatedBody>
             {usingDelegate && <AddressInputPanel value={typed} onChange={handleRecipientType} />}
             <ButtonPrimary disabled={!isAddress(parsedAddress ?? '')} onClick={onDelegate}>

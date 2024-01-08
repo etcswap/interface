@@ -1,16 +1,31 @@
 import styled from 'styled-components'
 
 import uImage from '../../assets/images/big_unicorn.png'
+import cImageDark from '../../assets/images/card-dao-dark.png'
 import noise from '../../assets/images/noise.png'
 import xlUnicorn from '../../assets/images/xl_uni.png'
 import { AutoColumn } from '../Column'
 
 export const DataCard = styled(AutoColumn)<{ disabled?: boolean }>`
-  background: radial-gradient(76.02% 75.41% at 1.84% 0%, #ff007a 0%, #2172e5 100%);
+  background: radial-gradient(76.02% 75.41% at 1.84% 0%, #33ff99 0%, #00331a 100%);
   border-radius: 12px;
   width: 100%;
   position: relative;
   overflow: hidden;
+`
+
+export const CardDaoDark = styled.span<{ desaturate?: boolean }>`
+  background: url(${cImageDark});
+  width: 1200px;
+  height: 600px;
+  position: absolute;
+  border-radius: 12px;
+  opacity: 0.15;
+  top: -200px;
+  left: -150px;
+  transform: rotate(-15deg);
+  user-select: none;
+  ${({ desaturate }) => desaturate && `filter: saturate(0)`}
 `
 
 export const CardBGImage = styled.span<{ desaturate?: boolean }>`

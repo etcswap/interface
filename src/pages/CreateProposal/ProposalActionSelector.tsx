@@ -113,14 +113,14 @@ export function ProposalActionSelectorModal({
         <MenuItem onClick={() => handleProposalActionSelect(ProposalAction.TRANSFER_TOKEN)}>
           <Column>
             <Text fontWeight={535}>
-              <Trans>Transfer token</Trans>
+              <Trans>Transfer Token</Trans>
             </Text>
           </Column>
         </MenuItem>
         <MenuItem onClick={() => handleProposalActionSelect(ProposalAction.APPROVE_TOKEN)}>
           <Column>
             <Text fontWeight={535}>
-              <Trans>Approve token</Trans>
+              <Trans>Approve Token</Trans>
             </Text>
           </Column>
         </MenuItem>

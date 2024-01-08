@@ -41,12 +41,12 @@ export default function ProposalEmptyState() {
   if (chainId && chainId !== ChainId.MAINNET) {
     return (
       <EmptyState
-        HeaderContent={() => <Trans>Please connect to Ethereum Classic Mainnet</Trans>}
+        HeaderContent={() => <Trans>Please connect to Ethereum Classic mainnet</Trans>}
         SubHeaderContent={() => (
           <Trans>
-            Ethereum Classic DAO governance is only available on Layer 1.
+            Ethereum Classic DAO governance is only available on Ethereum Classic mainnet.
             <br />
-            Switch your network to Ethereum Classic Mainnet to view Proposals and Vote.
+            Switch your network to Ethereum Classic to view Proposals and Vote.
           </Trans>
         )}
       />

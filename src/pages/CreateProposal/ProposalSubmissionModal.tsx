@@ -39,7 +39,7 @@ export const ProposalSubmissionModal = ({
             {hash && (
               <ExternalLink href={getExplorerLink(1, hash, ExplorerDataType.TRANSACTION)}>
                 <Text fontWeight={535} fontSize={14} color={theme.accent1}>
-                  <Trans>View on Etherscan</Trans>
+                  <Trans>View on block explorer</Trans>
                 </Text>
               </ExternalLink>
             )}
