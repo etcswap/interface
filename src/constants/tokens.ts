@@ -3,7 +3,7 @@ import invariant from 'tiny-invariant'
 
 export const NATIVE_CHAIN_ID = 'NATIVE'
 
-export const ETC_INIT_CODE_HASH = '0x2b415f82360ce2e6f344b508b8a5bb70898045911e527fd24d56056e0a97dd54'
+export const ETC_INIT_CODE_HASH = '0x7ea2da342810af3c5a9b47258f990aaac829fe1385a1398feb77d0126a85dbef'
 
 // When decimals are not specified for an ERC20 token
 // use default ERC20 token decimals as specified here:

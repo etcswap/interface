@@ -6125,7 +6125,7 @@
 
 "@uniswap/sdk-core@>= 3", "@uniswap/sdk-core@^4", "@uniswap/sdk-core@^4.0.0", "@uniswap/sdk-core@^4.0.2", "@uniswap/sdk-core@^4.0.3", "@uniswap/sdk-core@^4.0.6", "@uniswap/sdk-core@git+https://github.com/etcswap/sdk-core.git#etcswap":
   version "4.0.10"
-  resolved "git+https://github.com/etcswap/sdk-core.git#a251d7982a90d9e68331583b9a6c348ea5677e33"
+  resolved "git+https://github.com/etcswap/sdk-core.git#c74889fbfd2bb1ee88c0e19bf81c7863d083b38a"
   dependencies:
     "@ethersproject/address" "^5.0.2"
     big.js "^5.2.2"
@@ -6203,7 +6203,7 @@
 
 "@uniswap/universal-router-sdk@^1.5.4", "@uniswap/universal-router-sdk@git+https://github.com/etcswap/universal-router-sdk.git#etcswap":
   version "2.0.1"
-  resolved "git+https://github.com/etcswap/universal-router-sdk.git#93d26cc50e512c6884005ebaf59e6dbbeade261a"
+  resolved "git+https://github.com/etcswap/universal-router-sdk.git#5412f634d4a63c38167fc1b29135b0d3e5878ee6"
   dependencies:
     "@uniswap/permit2-sdk" "^1.2.0"
     "@uniswap/router-sdk" "^1.6.0"
@@ -6268,7 +6268,7 @@
 
 "@uniswap/v3-core@^1.0.1", "@uniswap/v3-core@git+https://github.com/etcswap/v3-core.git#etcswap":
   version "1.0.1"
-  resolved "git+https://github.com/etcswap/v3-core.git#bb3363b86586304765017e3e9b3b1638dc8044e2"
+  resolved "git+https://github.com/etcswap/v3-core.git#d704d52586f3cb8df641b4f5ba0ebba00bf3130f"
 
 "@uniswap/v3-periphery@1.3.0", "@uniswap/v3-periphery@1.4.1", "@uniswap/v3-periphery@^1.0.1", "@uniswap/v3-periphery@^1.1.1", "@uniswap/v3-periphery@git+https://github.com/etcswap/v3-periphery.git#etcswap":
   version "1.4.4"
