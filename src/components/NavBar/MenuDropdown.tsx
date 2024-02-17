@@ -160,10 +160,10 @@ export const MenuDropdown = () => {
                     <GovernanceIcon width={24} height={24} color={theme.neutral1} />
                   </Icon>
                   <PrimaryMenuRow.Text>
-                    <Trans>Vote in governance</Trans>
+                    <Trans>Vote with ECO</Trans>
                   </PrimaryMenuRow.Text>
                 </PrimaryMenuRow>
-                <PrimaryMenuRow href="https://info.uniswap.org/#/">
+                <PrimaryMenuRow href="https://info.etcswap.org/#/">
                   <Icon>
                     <BarChartIcon width={24} height={24} color={theme.neutral1} />
                   </Icon>
@@ -215,14 +215,8 @@ export const MenuDropdown = () => {
                 alignItems={{ sm: 'center', md: 'flex-start' }}
                 paddingX="8"
               >
-                <SecondaryLinkedText href="https://help.etcswap.org/">
-                  <Trans>Help center</Trans> ↗
-                </SecondaryLinkedText>
                 <SecondaryLinkedText href="https://docs.etcswap.org/">
                   <Trans>Documentation</Trans> ↗
-                </SecondaryLinkedText>
-                <SecondaryLinkedText href="https://requests.etcswap.org/">
-                  <Trans>Feedback</Trans> ↗
                 </SecondaryLinkedText>
                 <SecondaryLinkedText
                   onClick={() => {

@@ -150,13 +150,13 @@ export default function Pool() {
               <AutoColumn gap="md">
                 <RowBetween>
                   <ThemedText.DeprecatedWhite fontWeight={535}>
-                    <Trans>Liquidity provider rewards</Trans>
+                    <Trans>ETCswapV2 Liquidity provider rewards</Trans>
                   </ThemedText.DeprecatedWhite>
                 </RowBetween>
                 <RowBetween>
                   <ThemedText.DeprecatedWhite fontSize={14}>
                     <Trans>
-                      Liquidity providers earn a 0.3% fee on all trades proportional to their share of the pool. Fees
+                      Liquidity providers earn a 0.3% fee on all trades proportional to their share of the V2 pool. Fees
                       are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.
                     </Trans>
                   </ThemedText.DeprecatedWhite>
@@ -164,10 +164,10 @@ export default function Pool() {
                 <ExternalLink
                   style={{ color: theme.white, textDecoration: 'underline' }}
                   target="_blank"
-                  href="https://docs.uniswap.org/contracts/v2/concepts/core-concepts/pools"
+                  href="https://docs.etcswap.org/contracts/v2/concepts/core-concepts/pools"
                 >
                   <ThemedText.DeprecatedWhite fontSize={14}>
-                    <Trans>Read more about providing liquidity</Trans>
+                    <Trans>Read more about providing liquidity in ETCswapV2</Trans>
                   </ThemedText.DeprecatedWhite>
                 </ExternalLink>
               </AutoColumn>
@@ -188,7 +188,7 @@ export default function Pool() {
                     </ThemedText.DeprecatedMediumHeader>
                   </HideSmall>
                   <ButtonRow>
-                    <ResponsiveButtonSecondary as={Link} padding="6px 8px" to="/add/v2/ETH">
+                    <ResponsiveButtonSecondary as={Link} padding="6px 8px" to="/add/v2/ETC">
                       <Trans>Create a pair</Trans>
                     </ResponsiveButtonSecondary>
                     <ResponsiveButtonPrimary id="find-pool-button" as={Link} to="/pools/v2/find" padding="6px 8px">
@@ -196,7 +196,7 @@ export default function Pool() {
                         <Trans>Import pool</Trans>
                       </Text>
                     </ResponsiveButtonPrimary>
-                    <ResponsiveButtonPrimary id="join-pool-button" as={Link} to="/add/v2/ETH" padding="6px 8px">
+                    <ResponsiveButtonPrimary id="join-pool-button" as={Link} to="/add/v2/ETC" padding="6px 8px">
                       <Text fontWeight={535} fontSize={16}>
                         <Trans>Add V2 liquidity</Trans>
                       </Text>
