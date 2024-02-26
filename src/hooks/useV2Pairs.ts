@@ -48,7 +48,6 @@ export function useV2Pairs(currencies: [Currency | undefined, Currency | undefin
       if (!reserves) return [PairState.NOT_EXISTS, null]
       const { reserve0, reserve1 } = reserves
       const [token0, token1] = tokenA.sortsBefore(tokenB) ? [tokenA, tokenB] : [tokenB, tokenA]
-      console.log(token0, token1)
       return [
         PairState.EXISTS,
         new Pair(
