@@ -55,7 +55,9 @@ export default function MigrateV2() {
   const theme = useTheme()
   const { account, chainId } = useWeb3React()
 
-  const v2FactoryAddress = chainId ? V2_FACTORY_ADDRESSES[chainId] : undefined
+  const v2FactoryAddress = chainId
+    ? V2_FACTORY_ADDRESSES[chainId] || (process.env.REACT_APP_V2_FACTORY as string)
+    : undefined
 
   // fetch the user's balances of all tracked V2 LP tokens
   const trackedTokenPairs = useTrackedTokenPairs()
@@ -131,8 +133,7 @@ export default function MigrateV2() {
 
           <ThemedText.DeprecatedBody style={{ marginBottom: 8, fontWeight: 485 }}>
             <Trans>
-              For each pool shown below, click migrate to remove your liquidity from Uniswap V2 and deposit it into
-              Uniswap V3.
+              For each pool shown below, click migrate to remove your liquidity from V2 and deposit it into V3.
             </Trans>
           </ThemedText.DeprecatedBody>
 

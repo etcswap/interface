@@ -128,7 +128,9 @@ function V2PairMigration({
 }) {
   const { chainId, account } = useWeb3React()
   const theme = useTheme()
-  const v2FactoryAddress = chainId ? V2_FACTORY_ADDRESSES[chainId] : undefined
+  const v2FactoryAddress = chainId
+    ? V2_FACTORY_ADDRESSES[chainId] || (process.env.REACT_APP_V2_FACTORY as string)
+    : undefined
   const trace = useTrace()
 
   const pairFactory = useSingleCallResult(pair, 'factory')
@@ -241,7 +243,19 @@ function V2PairMigration({
 
   // approvals
   const [approval, approveManually] = useApproveCallback(pairBalance, migrator?.address)
-  const { signatureData, gatherPermitSignature } = useV2LiquidityTokenPermit(pairBalance, migrator?.address)
+  const permitInfoOverride =
+    chainId === 61
+      ? {
+          version: '1',
+          name: 'HEBESWAP LP TOKEN',
+          type: 1,
+        }
+      : undefined
+  const { signatureData, gatherPermitSignature } = useV2LiquidityTokenPermit(
+    pairBalance,
+    migrator?.address,
+    permitInfoOverride
+  )
 
   const isArgentWallet = useIsArgentWallet()
 
@@ -400,7 +414,7 @@ function V2PairMigration({
         {chainId && migrator && (
           <ExternalLink href={getExplorerLink(chainId, migrator.address, ExplorerDataType.ADDRESS)}>
             <ThemedText.DeprecatedBlue display="inline">
-              <Trans>Uniswap migration contract</Trans> ↗
+              <Trans>migration contract</Trans> ↗
             </ThemedText.DeprecatedBlue>
           </ExternalLink>
         )}
@@ -452,8 +466,8 @@ function V2PairMigration({
                 textAlign="center"
               >
                 <Trans>
-                  You are the first liquidity provider for this Uniswap V3 pool. Your liquidity will migrate at the
-                  current {isNotUniswap ? 'SushiSwap' : 'V2'} price.
+                  You are the first liquidity provider for this V3 pool. Your liquidity will migrate at the current{' '}
+                  {isNotUniswap ? 'SushiSwap' : 'V2'} price.
                 </Trans>
               </ThemedText.DeprecatedBody>
 
@@ -521,7 +535,7 @@ function V2PairMigration({
               </AutoColumn>
               <ThemedText.DeprecatedBody fontSize={14} style={{ marginTop: 8, fontWeight: 485 }}>
                 <Trans>
-                  You should only deposit liquidity into Uniswap V3 at a price you believe is correct. <br />
+                  You should only deposit liquidity into ETCswap V3 at a price you believe is correct. <br />
                   If the price seems incorrect, you can either make a swap to move the price or wait for someone else to
                   do so.
                 </Trans>
