@@ -133,7 +133,8 @@ export default function MigrateV2() {
 
           <ThemedText.DeprecatedBody style={{ marginBottom: 8, fontWeight: 485 }}>
             <Trans>
-              For each pool shown below, click migrate to remove your liquidity from V2 and deposit it into V3.
+              For each pool shown below, click migrate to remove your liquidity from Hebeswap V2 and deposit it into
+              ETCswap V3.
             </Trans>
           </ThemedText.DeprecatedBody>
 
