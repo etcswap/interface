@@ -236,8 +236,8 @@ export default function Pool() {
           <Layers size={16} />
         </PoolMenuItem>
       ),
-      link: '/pools/v2',
-      external: false,
+      link: 'https://v2.etcswap.org/#/pool', // '/pools/v2'
+      external: true,
     },
     {
       content: (
