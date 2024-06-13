@@ -172,7 +172,6 @@
     "@uniswap/v3-periphery": "git+https://github.com/etcswap/v3-periphery.git#etcswap",
     "@uniswap/v3-sdk": "git+https://github.com/etcswap/v3-sdk.git#etcswap",
     "@uniswap/v2-sdk": "git+https://github.com/etcswap/v2-sdk.git#etcswap"
-
   },
   "dependencies": {
     "@apollo/client": "^3.7.2",
