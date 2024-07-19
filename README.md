@@ -10,13 +10,10 @@
 
 An open source interface for ETCswap -- a protocol for decentralized exchange of Ethereum Classic tokens.
 
-- Website: [etcswap.org](https://etcswap.org/)
-- Interface: [app.etcswap.org](https://app.etcswap.org)
-- Docs: [uniswap.org/docs/](https://docs.uniswap.org/)
-- Twitter: [@EthClassicDAO](https://twitter.com/EthClassicDAO)
-- Reddit: [/r/EthereumClassic](https://www.reddit.com/r/ethereumclassic/)
-- Email: [contact@etcswap.org](mailto:contact@etcswap.org)
-- Discord: [Ethereum Classic](https://ethereumclassic.org/discord)
+- Website: [etcswap.org](https://etcswap.org)
+- Interface: [v3.etcswap.org](https://v3.etcswap.org)
+- Docs: [docs.etcswap.org](https://docs.etcswap.org)
+- Twitter: [@ETCswap_org](https://twitter.com/ETCswap_org)
 - Protocol Whitepapers:
   - [V1](https://hackmd.io/C-DvwDSfSxuh-Gd4WKE_ig)
   - [V2](https://uniswap.org/whitepaper.pdf)
@@ -25,8 +22,8 @@ An open source interface for ETCswap -- a protocol for decentralized exchange of
 ## Accessing the ETCswap Interface
 
 To access the ETCswap Interface, use an IPFS gateway link from the
-[latest release](https://github.com/etcswap/interface/releases/latest),
-or visit [app.etcswap.org](https://app.etcswap.org).
+[v3-ipfs.etcswap.org](https://v3-ipfs.etcswap.org),
+or visit [v3.etcswap.org](https://v3.etcswap.org).
 
 ## Unsupported tokens
 
@@ -69,10 +66,10 @@ Other things to note:
 
 The ETCswap Interface supports swapping, adding liquidity, removing liquidity and migrating liquidity for ETCswap protocol V2.
 
-- Swap on ETCswap V2: <https://app.etcswap.org/swap?use=v2>
-- View V2 liquidity: <https://app.etcswap.org/pools/v2>
-- Add V2 liquidity: <https://app.etcswap.org/add/v2>
-- Migrate V2 liquidity to V3: <https://app.etcswap.org/migrate/v2>
+- Swap on ETCswap V2: <https://v3.etcswap.org/swap?use=v2>
+- View V2 liquidity: <https://v3.etcswap.org/pools/v2>
+- Add V2 liquidity: <https://v3.etcswap.org/add/v2>
+- Migrate V2 liquidity to V3: <https://v3.etcswap.org/migrate/v2>
 
 ## Accessing ETCswap V1: This protocol was never deployed to Ethereum Classic
 
