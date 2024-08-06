@@ -1,6 +1,6 @@
 export const UNI_LIST = 'https://cloudflare-ipfs.com/ipns/tokens.uniswap.org'
 export const UNI_EXTENDED_LIST = 'https://cloudflare-ipfs.com/ipns/extendedtokens.uniswap.org'
-const UNI_UNSUPPORTED_LIST = 'https://cloudflare-ipfs.com/ipns/unsupportedtokens.uniswap.org'
+// const UNI_UNSUPPORTED_LIST = 'https://cloudflare-ipfs.com/ipns/unsupportedtokens.uniswap.org'
 const AAVE_LIST = 'tokenlist.aave.eth'
 const BA_LIST = 'https://raw.githubusercontent.com/The-Blockchain-Association/sec-notice-list/master/ba-sec-list.json'
 // TODO(WEB-2282): Re-enable CMC list once we have a better solution for handling large lists.
@@ -28,7 +28,7 @@ export const AVALANCHE_LIST =
 export const BASE_LIST =
   'https://raw.githubusercontent.com/ethereum-optimism/ethereum-optimism.github.io/master/optimism.tokenlist.json'
 
-export const UNSUPPORTED_LIST_URLS: string[] = [BA_LIST, UNI_UNSUPPORTED_LIST]
+export const UNSUPPORTED_LIST_URLS: string[] = [BA_LIST /*UNI_UNSUPPORTED_LIST*/]
 
 // default lists to be 'active' aka searched across
 export const DEFAULT_ACTIVE_LIST_URLS: string[] = [UNI_LIST, CLASSIC_LIST]
