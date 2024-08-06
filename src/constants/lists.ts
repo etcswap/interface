@@ -3,6 +3,7 @@ export const UNI_EXTENDED_LIST = 'https://cloudflare-ipfs.com/ipns/extendedtoken
 // const UNI_UNSUPPORTED_LIST = 'https://cloudflare-ipfs.com/ipns/unsupportedtokens.uniswap.org'
 // const AAVE_LIST = 'tokenlist.aave.eth'
 // const BA_LIST = 'https://raw.githubusercontent.com/The-Blockchain-Association/sec-notice-list/master/ba-sec-list.json'
+
 // TODO(WEB-2282): Re-enable CMC list once we have a better solution for handling large lists.
 // const CMC_ALL_LIST = 'https://s3.coinmarketcap.com/generated/dex/tokens/eth-tokens-all.json'
 // const COINGECKO_LIST = 'https://tokens.coingecko.com/uniswap/all.json'
