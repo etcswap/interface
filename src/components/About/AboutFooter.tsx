@@ -172,7 +172,7 @@ export const AboutFooter = () => {
           <ExternalTextLink href="https://wrappedether.org">Wrapped Ether</ExternalTextLink>
           <ExternalTextLink href="https://v2.etcswap.org">ETCswap V2</ExternalTextLink>
           <ExternalTextLink href="https://hummingbot.org/exchanges/etcSwap/">Hummingbot</ExternalTextLink>
-          <ExternalTextLink href="https://www.geckoterminal.com/ethereum_classic/pools">GeckoTerminal</ExternalTextLink>
+          <ExternalTextLink href="https://www.geckoterminal.com/ethereum_classic/pools">Gecko Terminal</ExternalTextLink>
         </LinkGroup>
         <LinkGroup>
           <LinkGroupTitle>Ethereum Classic</LinkGroupTitle>
