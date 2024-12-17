@@ -43,10 +43,10 @@ export const MORE_CARDS = [
     to: 'https://classicusd.com',
     external: true,
     title: 'Classic USD',
-    description: 'A fiat-backed stablecoin that connects Ethereum Classic to the global financial world.',
+    description: 'A fiat-backed stablecoin that connects Ethereum Classic to the financial world.',
     lightIcon: <DollarSign color={lightTheme.neutral3} size={48} />,
     darkIcon: <StyledCardLogo src={darkDollarImgSrc} alt="Stablecoin" />,
-    cta: 'Mint USC Stablecoins',
+    cta: 'Mint USC',
     elementName: InterfaceElementName.ABOUT_PAGE_BUY_CRYPTO_CARD,
   },
   {
