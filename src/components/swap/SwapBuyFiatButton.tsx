@@ -144,22 +144,6 @@ export default function SwapBuyFiatButton() {
           </ExternalLink>
         </StyledTextButton>
       </TraceEvent>
-      <StyledTextButton
-          // onClick={handleBuyCryptohandleBuyCrypto}
-          disabled={buyCryptoButtonDisabled}
-          data-testid="buy-fiat-button"
-        >
-          <ExternalLink
-            href="https://launchpad.etcswap.org"
-            style={{
-              color: 'inherit',
-              cursor: 'pointer',
-            }}
-          >
-            <Trans>Launchpad</Trans>
-          </ExternalLink>
-        </StyledTextButton>
-      </TraceEvent>
     </MouseoverTooltip>
   )
 }
