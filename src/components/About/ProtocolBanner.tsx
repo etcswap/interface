@@ -87,7 +87,7 @@ const ProtocolBanner = () => {
   return (
     <Banner isDarkMode={isDarkMode}>
       <TextContainer>
-        <HeaderText>Powered by Ethereum Classic</HeaderText>
+        <HeaderText>Built on top of Ethereum Classic</HeaderText>
         <DescriptionText>
           Applications on Ethereum Classic have been operating uninterrupted for a year longer than on Ethereum™
           Foundation, making ETC the longest running and most reliable Smart Contract Platform. More importantly,

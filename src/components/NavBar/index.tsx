@@ -65,19 +65,28 @@ export const PageTabs = () => {
   return (
     <>
       <MenuItem href="/swap" isActive={pathname.startsWith('/swap')}>
-        <Trans>Swap</Trans>
+        <Trans>Trade</Trans>
       </MenuItem>
       <MenuItem href="/pools" dataTestId="pool-nav-link" isActive={isPoolActive}>
-        <Trans>Pools</Trans>
+        <Trans>Portfolio</Trans>
       </MenuItem>
       <a
-        href="https://info.etcswap.org"
+        href="https://Launchpad.etcswap.org"
         target="_blank"
         className={styles.menuItem}
         style={{ textDecoration: 'none' }}
-        rel="noreferrer"
+        rel="noopener noreferrer"
       >
-        <Trans>Info</Trans>
+        <Trans>Launchpad</Trans>
+      </a>
+      <a
+        href="https://www.geckoterminal.com/ethereum_classic/etcswap-v3/pools"
+        target="_blank"
+        className={styles.menuItem}
+        style={{ textDecoration: 'none' }}
+        rel="noopener noreferrer"
+      >
+        <Trans>Markets</Trans>
       </a>
       {/* <MenuItem href={`/tokens/${chainName.toLowerCase()}`} isActive={pathname.startsWith('/tokens')}>
         <Trans>Tokens</Trans>

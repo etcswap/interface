@@ -116,31 +116,28 @@ const LogoSectionContent = () => {
     <>
       {/* <StyledLogo src={isDarkMode ? darkEcoImgSrc : lightEcoImgSrc} alt="ETCswap Logo" /> */}
       <SocialLinks>
-        <SocialLink href="https://ethereumclassic.org/discord" target="_blank" rel="noopener noreferrer">
-          <DiscordIcon size={32} />
-        </SocialLink>
         <TraceEvent
           events={[BrowserEvent.onClick]}
           name={SharedEventName.ELEMENT_CLICKED}
           element={InterfaceElementName.TWITTER_LINK}
         >
-          <SocialLink href="https://twitter.com/EthClassicDAO" target="_blank" rel="noopener noreferrer">
+          <SocialLink href="https://twitter.com/ETCswap_org" target="_blank" rel="noopener noreferrer">
             <TwitterIcon size={32} />
           </SocialLink>
         </TraceEvent>
         <SocialLink href="https://github.com/etcswap" target="_blank" rel="noopener noreferrer">
           <GithubIcon size={32} />
         </SocialLink>
+        <SocialLink href="https://ethereumclassic.org/discord" target="_blank" rel="noopener noreferrer">
+          <DiscordIcon size={32} />
+        </SocialLink>
       </SocialLinks>
       <Copyright>
         Made with 💚 by
         <br />
-        EthereumClassic.com
+        <a href="https://ethereumclassic.com" target="_blank"><font color="#33ff99">EthereumClassic.com</font></a>
         <br />
-        White B0x Inc.
-        <br />
-        All Rights Reserved.
-        <br />© {new Date().getFullYear()}
+        © {new Date().getFullYear()} All Rights Reserved.
       </Copyright>
     </>
   )
@@ -156,19 +153,21 @@ export const AboutFooter = () => {
 
       <FooterLinks>
         <LinkGroup>
-          <LinkGroupTitle>App</LinkGroupTitle>
-          <TextLink to="/swap">Swap</TextLink>
-          <TextLink to="/pools">Pools</TextLink>
-          <ExternalTextLink href="https://info.etcswap.org">Info</ExternalTextLink>
+          <LinkGroupTitle>V3 Applications</LinkGroupTitle>
+          <TextLink to="/swap">Decentralized Exchange</TextLink>
+          <TextLink to="/pools">Liquidity Portfolio</TextLink>
+          <ExternalTextLink href="https://launchpad.etcswap.org">Token Launchpad</ExternalTextLink>
+          <ExternalTextLink href="https://info.etcswap.org">Market Analytics</ExternalTextLink>
           {/* <TextLink to="/tokens">Tokens</TextLink> */}
-          {!shouldDisableNFTRoutes && <TextLink to="/nfts">NFTs</TextLink>}
+          {!shouldDisableNFTRoutes && <TextLink to="/nfts">NFT Marketplace</TextLink>}
         </LinkGroup>
         <LinkGroup>
-          <LinkGroupTitle>Protocol</LinkGroupTitle>
-          <ExternalTextLink href="https://classicusd.com">USC Stablecoin</ExternalTextLink>
-          <ExternalTextLink href="https://twitter.com/EthClassicDAO">X / Twitter</ExternalTextLink>
-          <ExternalTextLink href="https://discord.gg/2x6Dau6Bur">Discord</ExternalTextLink>
-          <ExternalTextLink href="https://docs.etcswap.org">Documentation</ExternalTextLink>
+          <LinkGroupTitle>Products</LinkGroupTitle>
+          <ExternalTextLink href="https://v3.etcswap.org">ETCswap V3</ExternalTextLink>
+          <ExternalTextLink href="https://launchpad.etcswap.org">Token Launchpad</ExternalTextLink>
+          <ExternalTextLink href="https://classicusd.com">Classic USD</ExternalTextLink>
+          <ExternalTextLink href="https://wrappedether.org">Wrapped Ether</ExternalTextLink>
+          <ExternalTextLink href="https://v2.etcswap.org">ETCswap V2</ExternalTextLink>
         </LinkGroup>
         <LinkGroup>
           <LinkGroupTitle>Ethereum Classic</LinkGroupTitle>
