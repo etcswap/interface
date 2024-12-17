@@ -200,10 +200,10 @@ export const MenuDropdown = () => {
                 alignItems={{ sm: 'center', md: 'flex-start' }}
                 paddingX="8"
               >
-                <SecondaryLinkedText href="https://docs.etcswap.org/">
+                <SecondaryLinkedText href="https://docs.etcswap.org/" target="_blank" rel="noopener noreferrer">
                   <Trans>Documentation</Trans> ↗
                 </SecondaryLinkedText>
-                <SecondaryLinkedText href="https://docs.etcswap.org/legal/overview">
+                <SecondaryLinkedText href="https://docs.etcswap.org/legal/overview" target="_blank" rel="noopener noreferrer">
                   <Trans>Legal & Privacy</Trans> ↗
                 </SecondaryLinkedText>
                 {(isDevelopmentEnv() || isStagingEnv()) && (
@@ -218,13 +218,13 @@ export const MenuDropdown = () => {
                 )}
               </Box>
               <IconRow>
-                <Icon href="https://ethereumclassic.org/discord">
+                <Icon href="https://ethereumclassic.org/discord" target="_blank" rel="noopener noreferrer">
                   <DiscordIconMenu className={styles.hover} width={24} height={24} color={themeVars.colors.neutral2} />
                 </Icon>
-                <Icon href="https://twitter.com/EthClassicDAO">
+                <Icon href="https://x.com/ETCswap_org" target="_blank" rel="noopener noreferrer">
                   <TwitterIconMenu className={styles.hover} width={24} height={24} color={themeVars.colors.neutral2} />
                 </Icon>
-                <Icon href="https://github.com/etcswap">
+                <Icon href="https://github.com/etcswap" target="_blank" rel="noopener noreferrer">
                   <GithubIconMenu className={styles.hover} width={24} height={24} color={themeVars.colors.neutral2} />
                 </Icon>
               </IconRow>
