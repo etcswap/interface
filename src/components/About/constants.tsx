@@ -43,10 +43,10 @@ export const MORE_CARDS = [
     to: 'https://classicusd.com',
     external: true,
     title: 'Classic USD',
-    description: 'Classic USD is a regulated fiat-backed stablecoin that features quick processing times, low fees, and 1:1 collateralization.',
+    description: 'A fiat-backed stablecoin that connects the Ethereum Classic ecosystem to the global financial world.',
     lightIcon: <DollarSign color={lightTheme.neutral3} size={48} />,
     darkIcon: <StyledCardLogo src={darkDollarImgSrc} alt="Stablecoin" />,
-    cta: 'Mint USC Stablecoin',
+    cta: 'Mint USC Stablecoins',
     elementName: InterfaceElementName.ABOUT_PAGE_BUY_CRYPTO_CARD,
   },
   {
@@ -55,7 +55,7 @@ export const MORE_CARDS = [
     description: 'Liquidity Providers earn returns on their digital assets through ETCswap V3 trading fees.',
     lightIcon: <StyledCardLogo src={lightArrowImgSrc} alt="Earn" />,
     darkIcon: <StyledCardLogo src={darkArrowImgSrc} alt="Earn" />,
-    cta: 'Build a Portfolio',
+    cta: 'Earn Passive Income',
     elementName: InterfaceElementName.ABOUT_PAGE_EARN_CARD,
   },
   {
@@ -65,7 +65,7 @@ export const MORE_CARDS = [
     description: 'Create a token that can be instantly traded for ETC with just one click.',
     lightIcon: <Terminal color={lightTheme.neutral3} size={48} />,
     darkIcon: <StyledCardLogo src={darkTerminalImgSrc} alt="Creators" />,
-    cta: 'Launch Tokens',
+    cta: 'Launch Projects',
     elementName: InterfaceElementName.ABOUT_PAGE_DEV_DOCS_CARD,
   },
 ]
