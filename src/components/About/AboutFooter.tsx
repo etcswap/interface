@@ -125,21 +125,23 @@ const LogoSectionContent = () => {
             <TwitterIcon size={32} />
           </SocialLink>
         </TraceEvent>
+        <SocialLink href="https://discord.gg/3j55xXEEdP" target="_blank" rel="noopener noreferrer">
+          <DiscordIcon size={32} />
+        </SocialLink>
         <SocialLink href="https://github.com/etcswap" target="_blank" rel="noopener noreferrer">
           <GithubIcon size={32} />
-        </SocialLink>
-        <SocialLink href="https://ethereumclassic.org/discord" target="_blank" rel="noopener noreferrer">
-          <DiscordIcon size={32} />
         </SocialLink>
       </SocialLinks>
       <Copyright>
         Made with 💚 by
         <br />
-        <a href="https://ethereumclassic.com" target="_blank" rel="noopener noreferrer"><font color="#33ff99">EthereumClassic.com</font></a>
+        ETCswap © {new Date().getFullYear()}
         <br />
         All Rights Reserved.
         <br />
-        © {new Date().getFullYear()} 
+        <a href="https://ethereumclassic.com" target="_blank" rel="noopener noreferrer">
+          EthereumClassic.com
+        </a>
       </Copyright>
     </>
   )
@@ -156,23 +158,27 @@ export const AboutFooter = () => {
       <FooterLinks>
         <LinkGroup>
           <LinkGroupTitle>V3 Applications</LinkGroupTitle>
+          <ExternalTextLink href="https://launchpad.etcswap.org">Launchpad</ExternalTextLink>
           <TextLink to="/swap">Decentralized Exchange</TextLink>
           <TextLink to="/pools">Liquidity Portfolio</TextLink>
-          <ExternalTextLink href="https://launchpad.etcswap.org">Token Launchpad</ExternalTextLink>
-          <ExternalTextLink href="https://www.geckoterminal.com/ethereum_classic/etcswap-v3/pools">Market Screener</ExternalTextLink>
-          <ExternalTextLink href="https://info.etcswap.org">Market Analytics</ExternalTextLink>
+          <ExternalTextLink href="https://info.etcswap.org">Markets</ExternalTextLink>
+          <ExternalTextLink href="https://www.geckoterminal.com/ethereum_classic/etcswap-v3/pools">
+            Screener
+          </ExternalTextLink>
           {/* <TextLink to="/tokens">Tokens</TextLink> */}
           {!shouldDisableNFTRoutes && <TextLink to="/nfts">NFT Marketplace</TextLink>}
         </LinkGroup>
         <LinkGroup>
           <LinkGroupTitle>Products</LinkGroupTitle>
           <ExternalTextLink href="https://v3.etcswap.org">ETCswap V3</ExternalTextLink>
-          <ExternalTextLink href="https://launchpad.etcswap.org">Token Launchpad</ExternalTextLink>
+          <ExternalTextLink href="https://launchpad.etcswap.org">Launchpad</ExternalTextLink>
           <ExternalTextLink href="https://classicusd.com">Classic USD</ExternalTextLink>
           <ExternalTextLink href="https://wrappedether.org">Wrapped Ether</ExternalTextLink>
           <ExternalTextLink href="https://v2.etcswap.org">ETCswap V2</ExternalTextLink>
           <ExternalTextLink href="https://hummingbot.org/exchanges/etcSwap/">Hummingbot</ExternalTextLink>
-          <ExternalTextLink href="https://www.geckoterminal.com/ethereum_classic/pools">Gecko Terminal</ExternalTextLink>
+          <ExternalTextLink href="https://www.geckoterminal.com/ethereum_classic/pools">
+            Gecko Terminal
+          </ExternalTextLink>
         </LinkGroup>
         <LinkGroup>
           <LinkGroupTitle>Ethereum Classic</LinkGroupTitle>

@@ -59,7 +59,7 @@ export const MORE_CARDS = [
     elementName: InterfaceElementName.ABOUT_PAGE_EARN_CARD,
   },
   {
-    to: '#',
+    to: 'https://launchpad.etcswap.org',
     external: true,
     title: 'Create Markets',
     description: 'Create a token that can be instantly traded for ETC with just one click.',
