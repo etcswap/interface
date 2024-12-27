@@ -135,11 +135,13 @@ const LogoSectionContent = () => {
       <Copyright>
         Made with 💚 by
         <br />
-        ETCswap © {new Date().getFullYear()} 
+        ETCswap © {new Date().getFullYear()}
         <br />
         All Rights Reserved.
         <br />
-        <a href="https://ethereumclassic.com" target="_blank" rel="noopener noreferrer"><font color="#33ff99">EthereumClassic.com</font></a>
+        <a href="https://ethereumclassic.com" target="_blank" rel="noopener noreferrer">
+          EthereumClassic.com
+        </a>
       </Copyright>
     </>
   )
@@ -160,7 +162,9 @@ export const AboutFooter = () => {
           <TextLink to="/swap">Decentralized Exchange</TextLink>
           <TextLink to="/pools">Liquidity Portfolio</TextLink>
           <ExternalTextLink href="https://info.etcswap.org">Markets</ExternalTextLink>
-          <ExternalTextLink href="https://www.geckoterminal.com/ethereum_classic/etcswap-v3/pools">Screener</ExternalTextLink>
+          <ExternalTextLink href="https://www.geckoterminal.com/ethereum_classic/etcswap-v3/pools">
+            Screener
+          </ExternalTextLink>
           {/* <TextLink to="/tokens">Tokens</TextLink> */}
           {!shouldDisableNFTRoutes && <TextLink to="/nfts">NFT Marketplace</TextLink>}
         </LinkGroup>
@@ -172,7 +176,9 @@ export const AboutFooter = () => {
           <ExternalTextLink href="https://wrappedether.org">Wrapped Ether</ExternalTextLink>
           <ExternalTextLink href="https://v2.etcswap.org">ETCswap V2</ExternalTextLink>
           <ExternalTextLink href="https://hummingbot.org/exchanges/etcSwap/">Hummingbot</ExternalTextLink>
-          <ExternalTextLink href="https://www.geckoterminal.com/ethereum_classic/pools">Gecko Terminal</ExternalTextLink>
+          <ExternalTextLink href="https://www.geckoterminal.com/ethereum_classic/pools">
+            Gecko Terminal
+          </ExternalTextLink>
         </LinkGroup>
         <LinkGroup>
           <LinkGroupTitle>Ethereum Classic</LinkGroupTitle>

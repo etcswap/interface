@@ -200,19 +200,19 @@ export const MenuDropdown = () => {
                 alignItems={{ sm: 'center', md: 'flex-start' }}
                 paddingX="8"
               >
-                <SecondaryLinkedText href="https://info.etcswap.org" target="_blank" rel="noopener noreferrer">
+                <SecondaryLinkedText href="https://info.etcswap.org">
                   <Trans>V3 Markets</Trans> ↗
                 </SecondaryLinkedText>
-                <SecondaryLinkedText href="https://www.geckoterminal.com/ethereum_classic/etcswap-v3/pools" target="_blank" rel="noopener noreferrer">
+                <SecondaryLinkedText href="https://www.geckoterminal.com/ethereum_classic/etcswap-v3/pools">
                   <Trans>V3 Screener</Trans> ↗
                 </SecondaryLinkedText>
-                <SecondaryLinkedText href="https://v2.etcswap.org" target="_blank" rel="noopener noreferrer">
+                <SecondaryLinkedText href="https://v2.etcswap.org">
                   <Trans>ETCswap V2</Trans> ↗
                 </SecondaryLinkedText>
-                <SecondaryLinkedText href="https://docs.etcswap.org" target="_blank" rel="noopener noreferrer">
+                <SecondaryLinkedText href="https://docs.etcswap.org">
                   <Trans>Documentation</Trans> ↗
                 </SecondaryLinkedText>
-                <SecondaryLinkedText href="https://docs.etcswap.org/legal/overview" target="_blank" rel="noopener noreferrer">
+                <SecondaryLinkedText href="https://docs.etcswap.org/legal/overview">
                   <Trans>Legal & Privacy</Trans> ↗
                 </SecondaryLinkedText>
                 {(isDevelopmentEnv() || isStagingEnv()) && (
@@ -227,13 +227,13 @@ export const MenuDropdown = () => {
                 )}
               </Box>
               <IconRow>
-              <Icon href="https://x.com/ETCswap_org" target="_blank" rel="noopener noreferrer">
+                <Icon href="https://x.com/ETCswap_org">
                   <TwitterIconMenu className={styles.hover} width={24} height={24} color={themeVars.colors.neutral2} />
                 </Icon>
-                <Icon href="https://discord.gg/3j55xXEEdP" target="_blank" rel="noopener noreferrer">
+                <Icon href="https://discord.gg/3j55xXEEdP">
                   <DiscordIconMenu className={styles.hover} width={24} height={24} color={themeVars.colors.neutral2} />
                 </Icon>
-                <Icon href="https://github.com/etcswap" target="_blank" rel="noopener noreferrer">
+                <Icon href="https://github.com/etcswap">
                   <GithubIconMenu className={styles.hover} width={24} height={24} color={themeVars.colors.neutral2} />
                 </Icon>
               </IconRow>
