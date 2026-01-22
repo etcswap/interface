@@ -128,8 +128,16 @@ function V2PairMigration({
 }) {
   const { chainId, account } = useWeb3React()
   const theme = useTheme()
+
+  // Helper to get V2 factory address for ETC chains
+  const getV2FactoryForChain = (cid: number): string | undefined => {
+    if (cid === 61) return process.env.REACT_APP_V2_FACTORY
+    if (cid === 63) return process.env.REACT_APP_63_V2_FACTORY
+    return undefined
+  }
+
   const v2FactoryAddress = chainId
-    ? V2_FACTORY_ADDRESSES[chainId] || (process.env.REACT_APP_V2_FACTORY as string)
+    ? V2_FACTORY_ADDRESSES[chainId] || getV2FactoryForChain(chainId) || (process.env.REACT_APP_V2_FACTORY as string)
     : undefined
   const trace = useTrace()
 
@@ -243,11 +251,12 @@ function V2PairMigration({
 
   // approvals
   const [approval, approveManually] = useApproveCallback(pairBalance, migrator?.address)
+  // ETCswap LP token permit info for ETC chains (61 = Classic, 63 = Mordor)
   const permitInfoOverride =
-    chainId === 61
+    chainId === 61 || chainId === 63
       ? {
           version: '1',
-          name: 'HEBESWAP LP TOKEN',
+          name: 'ETC-SWAP-V2',
           type: 1,
         }
       : undefined

@@ -14,6 +14,20 @@ export enum PairState {
   INVALID,
 }
 
+// Helper to get V2 factory address for ETC chains
+function getV2FactoryAddress(chainId: number): string | undefined {
+  if (chainId === 61) return process.env.REACT_APP_V2_FACTORY
+  if (chainId === 63) return process.env.REACT_APP_63_V2_FACTORY
+  return undefined
+}
+
+// Helper to get V2 init code hash for ETC chains
+function getV2InitCodeHash(chainId: number): string | undefined {
+  if (chainId === 61) return process.env.REACT_APP_61_V2_CODE_HASH
+  if (chainId === 63) return process.env.REACT_APP_63_V2_CODE_HASH
+  return undefined
+}
+
 export function useV2Pairs(currencies: [Currency | undefined, Currency | undefined][]): [PairState, Pair | null][] {
   const tokens = useMemo(
     () => currencies.map(([currencyA, currencyB]) => [currencyA?.wrapped, currencyB?.wrapped]),
@@ -25,10 +39,13 @@ export function useV2Pairs(currencies: [Currency | undefined, Currency | undefin
       tokens.map(([tokenA, tokenB]) => {
         return tokenA && tokenB && tokenA.chainId === tokenB.chainId && !tokenA.equals(tokenB)
           ? computePairAddress({
-              factoryAddress: V2_FACTORY_ADDRESSES[tokenA.chainId] || (process.env.REACT_APP_V2_FACTORY as string),
+              factoryAddress:
+                V2_FACTORY_ADDRESSES[tokenA.chainId] ||
+                getV2FactoryAddress(tokenA.chainId) ||
+                (process.env.REACT_APP_V2_FACTORY as string),
               tokenA,
               tokenB,
-              initCodeHashManualOverride: tokenA.chainId === 61 ? process.env.REACT_APP_61_V2_CODE_HASH : undefined,
+              initCodeHashManualOverride: getV2InitCodeHash(tokenA.chainId),
             })
           : undefined
       }),
@@ -53,8 +70,8 @@ export function useV2Pairs(currencies: [Currency | undefined, Currency | undefin
         new Pair(
           CurrencyAmount.fromRawAmount(token0, reserve0.toString()),
           CurrencyAmount.fromRawAmount(token1, reserve1.toString()),
-          tokenA.chainId === 61 ? process.env.REACT_APP_V2_FACTORY : undefined,
-          tokenA.chainId === 61 ? process.env.REACT_APP_61_V2_CODE_HASH : undefined
+          getV2FactoryAddress(tokenA.chainId),
+          getV2InitCodeHash(tokenA.chainId)
         ),
       ]
     })

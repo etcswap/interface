@@ -225,6 +225,20 @@ export function useUserOptedOutOfUniswapX(): boolean {
   return useAppSelector((state) => state.user.optedOutOfUniswapX) ?? false
 }
 
+// Helper to get V2 factory address for ETC chains
+function getV2FactoryAddress(chainId: number): string | undefined {
+  if (chainId === 61) return process.env.REACT_APP_V2_FACTORY
+  if (chainId === 63) return process.env.REACT_APP_63_V2_FACTORY
+  return undefined
+}
+
+// Helper to get V2 init code hash for ETC chains
+function getV2InitCodeHash(chainId: number): string | undefined {
+  if (chainId === 61) return process.env.REACT_APP_61_V2_CODE_HASH
+  if (chainId === 63) return process.env.REACT_APP_63_V2_CODE_HASH
+  return undefined
+}
+
 /**
  * Given two tokens return the liquidity token that represents its liquidity shares
  * @param tokenA one of the two tokens
@@ -237,10 +251,13 @@ export function toV2LiquidityToken([tokenA, tokenB]: [Token, Token]): Token {
   return new Token(
     tokenA.chainId,
     computePairAddress({
-      factoryAddress: V2_FACTORY_ADDRESSES[tokenA.chainId] || (process.env.REACT_APP_V2_FACTORY as string),
+      factoryAddress:
+        V2_FACTORY_ADDRESSES[tokenA.chainId] ||
+        getV2FactoryAddress(tokenA.chainId) ||
+        (process.env.REACT_APP_V2_FACTORY as string),
       tokenA,
       tokenB,
-      initCodeHashManualOverride: tokenA.chainId === 61 ? process.env.REACT_APP_61_V2_CODE_HASH : undefined,
+      initCodeHashManualOverride: getV2InitCodeHash(tokenA.chainId),
     }),
     18,
     'UNI-V2',
