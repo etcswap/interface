@@ -55,8 +55,15 @@ export default function MigrateV2() {
   const theme = useTheme()
   const { account, chainId } = useWeb3React()
 
+  // Helper to get V2 factory address for ETC chains
+  const getV2FactoryForChain = (cid: number): string | undefined => {
+    if (cid === 61) return process.env.REACT_APP_V2_FACTORY
+    if (cid === 63) return process.env.REACT_APP_63_V2_FACTORY
+    return undefined
+  }
+
   const v2FactoryAddress = chainId
-    ? V2_FACTORY_ADDRESSES[chainId] || (process.env.REACT_APP_V2_FACTORY as string)
+    ? V2_FACTORY_ADDRESSES[chainId] || getV2FactoryForChain(chainId) || (process.env.REACT_APP_V2_FACTORY as string)
     : undefined
 
   // fetch the user's balances of all tracked V2 LP tokens
@@ -133,7 +140,7 @@ export default function MigrateV2() {
 
           <ThemedText.DeprecatedBody style={{ marginBottom: 8, fontWeight: 485 }}>
             <Trans>
-              For each pool shown below, click migrate to remove your liquidity from Hebeswap V2 and deposit it into
+              For each pool shown below, click migrate to remove your liquidity from ETCswap V2 and deposit it into
               ETCswap V3.
             </Trans>
           </ThemedText.DeprecatedBody>
