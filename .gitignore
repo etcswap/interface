@@ -8,10 +8,10 @@
 /src/locales/**/*.po
 
 # generated files
-/src/**/__generated__
+# /src/**/__generated__
 
 # schema
-schema.graphql
+# schema.graphql
 
 # dependencies
 /node_modules
