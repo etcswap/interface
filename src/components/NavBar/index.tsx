@@ -70,7 +70,7 @@ export const PageTabs = () => {
       <MenuItem href="/pools" dataTestId="pool-nav-link" isActive={isPoolActive}>
         <Trans>Pools</Trans>
       </MenuItem>
-      <a
+      {/* <a
         href="https://launchpad.etcswap.org"
         target="_blank"
         className={styles.menuItem}
@@ -78,7 +78,7 @@ export const PageTabs = () => {
         rel="noopener noreferrer"
       >
         <Trans>Launchpad</Trans>
-      </a>
+      </a> */}
       {/* <MenuItem href={`/tokens/${chainName.toLowerCase()}`} isActive={pathname.startsWith('/tokens')}>
         <Trans>Tokens</Trans>
       </MenuItem> */}

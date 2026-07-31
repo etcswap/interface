@@ -200,9 +200,9 @@ export const MenuDropdown = () => {
                 alignItems={{ sm: 'center', md: 'flex-start' }}
                 paddingX="8"
               >
-                <SecondaryLinkedText href="https://info.etcswap.org">
+                {/* <SecondaryLinkedText href="https://info.etcswap.org">
                   <Trans>V3 Markets</Trans> ↗
-                </SecondaryLinkedText>
+                </SecondaryLinkedText> */}
                 <SecondaryLinkedText href="https://www.geckoterminal.com/ethereum_classic/etcswap-v3/pools">
                   <Trans>V3 Screener</Trans> ↗
                 </SecondaryLinkedText>
