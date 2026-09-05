@@ -90,7 +90,10 @@ export const FALLBACK_URLS = {
   ],
   [ChainId.CLASSIC]: [
     // "Safe" URLs
-    'https://0xrpc.io/etc',
+    `https://etc.etcdesktop.com`,
+    `https://0xrpc.io/etc`,
+    `https://geth-at.etc-network.info`,
+    `https://ethereum-classic-mainnet.gateway.tatum.io`,
     `https://etc.rivet.link`,
     // "Fallback" URLs
     `https://besu-at.etc-network.info`,
